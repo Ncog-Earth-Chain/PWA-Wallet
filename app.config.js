@@ -11,7 +11,7 @@ const appConfig = {
         // list of providers. if one of them is unavailable, another is randomly picked
         providers: [
             {
-                http: 'https://xapi.ncogchain.earth/',
+                http: 'https://xapi-test.ncogchain.earth/',
                 // for subscriptions
                 ws: '',
             },
@@ -22,11 +22,11 @@ const appConfig = {
     // Ncogearthchain chain id
     chainId: '0x9e0',
     // JSON-RPC endpoint
-    rpc: 'https://api.ncogchain.earth/',
+    rpc: 'https://api-test.ncogchain.earth/',
     // used in links pointing to ncogearthchain explorer
-    explorerUrl: 'https://explorer.ncogchain.earth/',
+    explorerUrl: 'https://explorer-test.ncogchain.earth/',
     // used in links pointing to validators
-    explorerUrl2: 'https://explorer.ncogchain.earth/',
+    explorerUrl2: 'https://explorer-test.ncogchain.earth/',
     // used in links pointing to ncogearthchain explorer's transaction detail
     explorerTransactionPath: 'tx',
     // used in links pointing to ethereum explorer
