@@ -5,7 +5,7 @@ in the library and they cover following client workflows:
 
 - **Communication with the Ncogearthchain Ledger Nano S app.** 
     
-    The library is compatible with the [Ncogearthchain Ledger  Nano S Application](https://github.com/Ncogearthchain-io/ncogearthchain-ledger).
+    The library is compatible with the [Ncogearthchain Ledger  Nano S Application](https://github.com/Ncog-Earth-Chain/ncogearthchain-ledger).
     Please follow instructions on the linked repository to deploy your copy
     of the Ncogearthchain Ledger HW wallet application.
     
@@ -44,7 +44,7 @@ token to have the other side to communicate with. If you don't, Please
 follow the Ledger manual and install your application. If not available,
 you can deploy it directly from our GitHub repository.
 
-[Ncogearthchain Ledger Nano S Application repository](https://github.com/Ncogearthchain-io/ncogearthchain-ledger)
+[Ncogearthchain Ledger Nano S Application repository](https://github.com/Ncog-Earth-Chain/ncogearthchain-ledger)
 
 In this case you app will not have the correct signature and so the
 Ledger device will always ask you for a permission before opening the app.
