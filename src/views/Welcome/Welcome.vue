@@ -1,8 +1,8 @@
 <template>
     <div class="welcome-view">
         <div class="intro">
-            <h1>Welcome to Ncogearthchain Wallet</h1>
-            <h2>Send, receive and stake your Ncogearthchain NEC</h2>
+            <h1>Welcome to NCOG Earth Chain Wallet</h1>
+            <h2>Send, receive and stake your NEC</h2>
         </div>
 
         <div class="view-account-main">

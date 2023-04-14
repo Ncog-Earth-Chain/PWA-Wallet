@@ -3,7 +3,7 @@
         <h2 :id="labelId" class="not-visible">Wallet instalation</h2>
 
         <p class="align-center">
-            The Ncogearthchain Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all platforms:
+            The NCOG Earth Chain Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all platforms:
         </p>
 
         <div class="inst-buttons">
@@ -40,11 +40,11 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">Ncogearthchain Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Go to <b>Settings</b> (Three dots in the top right corner)</li>
-                    <li><b>Step 3:</b> Click <b>“Install Ncogearthchain Wallet”</b></li>
+                    <li><b>Step 3:</b> Click <b>“Install NCOG Earth Chain Wallet”</b></li>
                 </ul>
             </div>
         </f-window>
@@ -60,7 +60,7 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">Ncogearthchain Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Safari</b>
                     </li>
                     <li><b>Step 2:</b> Click the <b>Share button</b> in Safari (at the bottom)</li>
@@ -80,7 +80,7 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">Ncogearthchain Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Click <b>Settings</b> (top right corner)</li>

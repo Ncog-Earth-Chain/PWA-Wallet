@@ -6,7 +6,7 @@
                     <social-media-links></social-media-links>
                 </div>
                 <div class="col align-center-sm align-end">
-                    <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022 Ncogearthchain</a>
+                    <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022-2023 Ncog Earth Chain</a>
                 </div>
             </div>
         </div>
