@@ -1,6 +1,6 @@
-# Ncogearthchain PWA Wallet
+# NCOG Earth Chain PWA Wallet
 
-JavaScript and Vue based Ncogearthchain pwa wallet.
+JavaScript and Vue based NCOG Earth Chain PWA Wallet.
 
 We are using:
 * Node / NPM
