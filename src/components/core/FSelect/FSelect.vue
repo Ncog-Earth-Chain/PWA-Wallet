@@ -11,7 +11,6 @@
             class="inp"
             :aria-invalid="isInvalid"
             :aria-describedby="ariaDescribedBy"
-            :class="inpClasses"
             @change="onChange"
         >
             <option v-for="item in data" :key="item.value" :value="item.value" :disabled="item.disabled">

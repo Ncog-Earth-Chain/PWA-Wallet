@@ -1,7 +1,7 @@
 <template>
     <span class="account-name" :class="cssClass">
         <template v-if="account.name">
-            <span v-if="!hideName" class="an-name">{{ account.name }}</span>
+            <span v-if="!hideName" class="an-name" style="color:#ffffff;font-size: 35px;">{{ account.name }}</span>
             <!--            <span class="an-address">{{ account.address | formatHash }}</span>-->
             <slot name="suffix"></slot>
 

@@ -191,6 +191,7 @@ button.no-style {
     align-items: center;
     justify-content: center;
     min-width: 2.25rem;
+    background-color: white;
 }
 
 @include buttons('.mini.same-size') {

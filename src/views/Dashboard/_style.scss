@@ -12,4 +12,344 @@
     main {
         padding-top: 0;
     }
+
+    .nec-status {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 12px;
+        padding: 40px 30px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        .available-cvr h5, .total-cvr h5 {
+            color: #1e1e1eb3;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+        .available-cvr p, .total-cvr p {
+            color: #1e1e1e;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            span {
+                color: #1e1e1eb3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 15px;
+                display: inline-block;
+            }
+        }
+
+        span.available-value {
+            border-radius: 6px;
+            background: #e4f7e1;
+            padding: 3px 7px;
+            display: inline-block;
+            margin-top: 10px;
+            color: #357d57;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        span.total-value {
+            border-radius: 6px;
+            background: #eee6c2;
+            padding: 3px 7px;
+            display: inline-block;
+            margin-top: 10px;
+            color: #ba5415;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .wallet-cvr {
+        margin: 20px 0px;
+        padding: 30px 10px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.08);
+        .walletkey-dtl{
+            .wallet-no {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: #1e1e1e;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 26px;
+                }
+                span {
+                    border-radius: 6px;
+                    background: #e4f7e1;
+                    padding: 2px 15px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    color: #31bc3c;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+            h5 {
+                margin-top: 25px;
+                margin-bottom: 8px;
+                color: #5094f9;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            p {
+                color: #0e8917;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            h6 {
+                color: #858585;
+                margin-top: 13px;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        
+
+        .nec-statuswall {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 12px;
+            padding: 40px 30px;
+            height: 100%;
+            .available-cvr {
+                padding-right: 30px;
+                margin-right: 30px;
+                position: relative;
+            }
+            .available-cvr h5, .total-cvr h5 {
+                color: #1e1e1eb3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+            .available-cvr p, .total-cvr p {
+                color: #1e1e1e;
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                span {
+                    color: #1e1e1eb3;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-left: 15px;
+                    display: inline-block;
+                }
+            }
+
+            span.available-value {
+                border-radius: 6px;
+                background: #e4f7e1;
+                padding: 3px 7px;
+                display: inline-block;
+                margin-top: 10px;
+                color: #357d57;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+    
+            span.total-value {
+                border-radius: 6px;
+                background: #eee6c2;
+                padding: 3px 7px;
+                display: inline-block;
+                margin-top: 10px;
+                color: #ba5415;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        .walletdtl-edit {
+            padding: 10px;
+            a.edit {
+                padding-left: 8px;
+            }
+            a.edit, a.copy {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+            }
+            a.copy {
+                border-right: 1px solid #00000017;
+                border-left: none;
+                padding-right: 13px;
+            }
+        }
+    }
+
+    .walletdtl-edit {
+        border-radius: 27px;
+        background: #f0f0f0;
+        max-width: max-content;
+        padding: 9px 25px;
+        margin-left: auto;
+    }
+
+    .contact-new {
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        .contact-cvr {
+            display: flex;
+            align-items: center;
+            h4 {
+                color: #1e1e1e;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-right: 26px;
+            }
+            span {
+                border-radius: 6px;
+                background: #e4f7e1;
+                padding: 2px 15px;
+                display: inline-block;
+                color: #31bc3c;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        button.newadd-contct {
+            outline: none;
+            border: none;
+            border-radius: 32.5px;
+            background: #31bc3c;
+            padding: 15px 44px;
+            color: #fff;
+            box-shadow: -1px 10px 20px #31bc3c9e;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 50px;
+            svg {
+                margin-right: 10px;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+        display: inline-block;
+        color: #fff;
+    }
+    a.contect-wall, a.create-wallet, a.restore-wallet {
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a.contect-wall h3 {
+        color: #5094f9;
+    }
+
+    a.create-wallet h3 {
+        color: #31bc3c;
+    }
+
+    a.restore-wallet h3 {
+        color: #f9d041;
+    }
+
+    a.contect-wall h3, a.create-wallet h3, a.restore-wallet h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 23px;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+
+}
+@media (min-width: 992px){
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
 }

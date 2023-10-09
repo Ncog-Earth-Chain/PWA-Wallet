@@ -115,4 +115,9 @@ export default {
 
 <style lang="scss">
 @import 'style';
+.btn.secondary, a.btn:visited.secondary {
+    color:#000;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    background: transparent;
+}
 </style>

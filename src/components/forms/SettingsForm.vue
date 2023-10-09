@@ -1,25 +1,15 @@
 <template>
     <div class="settings-form">
-        <f-card class="f-card-double-padding">
-            <f-form ref="form" center-form @f-form-change="onFormChange">
+       <center> <f-card class="f-card-double-padding" style="width:80%">
+            <f-form ref="form" center-form @f-form-change="onFormChange" style="width:50%">
                 <fieldset>
                     <legend class="not-visible">Settings form</legend>
                     <div class="form-body">
-                        <f-select
-                            name="currency"
-                            label="Currency"
-                            select-size="large"
-                            :data="currencies"
-                            :value="$store.state.currency"
-                        />
+                        <f-select name="currency" label="Currency" select-size="large" :data="currencies"
+                            :value="$store.state.currency" />
 
-                        <f-select
-                            name="fraction_digits"
-                            label="Decimal Points"
-                            select-size="large"
-                            :data="fractionDigits"
-                            :value="$store.state.fractionDigits.toString()"
-                        />
+                        <f-select name="fraction_digits" label="Decimal Points" select-size="large" :data="fractionDigits"
+                            :value="$store.state.fractionDigits.toString()" />
 
                         <f-select name="language" label="Language" select-size="large" :data="language" value="en-US" />
 
@@ -46,11 +36,8 @@
                         <br />
                         <div class="settings-form__darkmodeswitches">
                             <f-dark-mode-switch :disabled="autoDarkModeOn" />
-                            <f-toggle-button
-                                v-model="autoDarkModeOn"
-                                label="Auto Dark Mode"
-                                title="Sets the dark theme according to the system settings"
-                            />
+                            <f-toggle-button v-model="autoDarkModeOn" label="Auto Dark Mode"
+                                title="Sets the dark theme according to the system settings" />
                         </div>
                         <br />
                         <r-t-l-switch />
@@ -58,6 +45,7 @@
                 </fieldset>
             </f-form>
         </f-card>
+    </center>
     </div>
 </template>
 
@@ -170,4 +158,14 @@ export default {
     display: flex;
     gap: 16px;
 }
+.f-select select {
+    display: block;
+    border-radius: 14px;
+    padding: 17px 22px;
+    // max-width: 796px;
+    width: 100%;
+    margin-bottom: 30px;
+    height:60px;
+}
+
 </style>

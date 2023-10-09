@@ -1,14 +1,83 @@
 @import "../../assets/scss/vars";
 
-.view-wallet {
-    padding-inline-start: var(--f-left-menu-width);
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
 
+.view-wallet {
     .main {
         padding-top: 0;
     }
 
     .address-info-box {
         margin-bottom: 16px;
+    }
+
+    /* main css */
+    .nec-logo {
+        background-image: url(../../assets/image/nec-header-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding: 51px 40px 120px 40px;
+        display: flex;
+        position: relative;
+        z-index: 9;
+    }
+
+    .nec-slidebar {
+        display: flex;
+        .nec-navbar {
+            width: 287px;
+            padding-top: 120px;
+            padding-bottom: 65px;
+            background: #fff;
+            box-shadow: 0px 4px 150px 0px rgba(0, 0, 0, 0.08);
+            margin-top: -90px;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: list-item;
+                    text-align: -webkit-match-parent;
+                    
+                    a.active {
+                        color: #31bc3c;
+                        border-left: 3px solid #31bc3c;
+                        background: linear-gradient(
+                          90deg,
+                          #31bc3c3d 2.52%,
+                          rgba(49, 188, 60, 0) 87.6%
+                        );
+                    }
+                    a {
+                        padding: 14px 30px;
+                        color: #666666;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-bottom: 14px;
+                        svg {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .nec-dtl {
+            width: 100%;
+            margin-right: 40px;
+            padding: 30px;
+            max-width: 1570px;
+            margin-left: auto;
+            margin-top: -210px;
+            position: relative;
+            z-index: 9;
+        }
     }
 }
 
@@ -21,4 +90,27 @@
             margin-bottom: var(--f-bottom-menu-height);
         }
     }
+}
+
+@media (min-width: 768px){
+    .d-md-none {
+        display: none!important;
+    }
+}
+.view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
+
+    color: #31bc3c;
+    border-left: 3px solid #31bc3c;
+    background: linear-gradient(90deg, #31bc3c3d 2.52%, rgba(49, 188, 60, 0) 87.6%);
+
+}
+.view-wallet .nec-slidebar .nec-navbar ul li a {
+    padding: 14px 30px;
+    color: #666666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 14px;
+    text-decoration:none;
 }

@@ -58,7 +58,8 @@
     //--f-input-active-border-color: var(--f-lighter-color);
     //--f-outline-shadow: 0 0 0 2px rgba(87,92,128, 0.9);
     .inp {
-        --f-input-background-color: var(--f-darker-color-2);
+        --f-input-background-color:#F5F5F5;
+        border:#F5F5F5 solid 1px 
     }
 
     label.option {
@@ -66,7 +67,7 @@
     }
 
     @include buttons {
-        --f-button-light-hover-background-color: var(--f-darker-color-3);
+       // --f-button-light-hover-background-color: var(--f-darker-color-3);
     }
 
     .toggle-btn {

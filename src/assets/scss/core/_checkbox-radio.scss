@@ -28,7 +28,7 @@ label.option > span {
     //top: -10px;
     /*top: -$size-mini;*/
     //left: 1px;
-    background-color: var(--f-checkbox-background-color);
+    background-color: #EDEDED;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ label.option input:checked:disabled + span {
 }
 
 label.option > span.checkbox {
-    border: $input-border-width solid var(--f-input-border-color);
+    //border: $input-border-width solid var(--f-input-border-color);
     border-radius: $checkbox-radius;
 }
 

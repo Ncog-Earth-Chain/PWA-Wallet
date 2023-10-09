@@ -13,9 +13,10 @@
                             accept="application/json"
                             class="secondary large w100p"
                             @change="onKeystoreFileChange"
+                            style="border:#0E8917 solid 1px"
                         >
-                            <icon data="@/assets/svg/upload.svg" width="20" height="20"></icon> &nbsp; Upload keystore
-                            file
+                            <icon data="@/assets/svg/upload.svg" width="20" height="20" style="color: #0E8917;"></icon> <span style="color: #0E8917;">&nbsp; Upload keystore
+                            file</span>
                         </f-file-input-button>
                         <f-message v-if="dKeystoreUploadMsg && !dKeystoreErrorMsg" type="success" with-icon>
                             {{ dKeystoreUploadMsg }}
@@ -29,7 +30,7 @@
 
                         <f-password-field
                             v-model="pwd"
-                            label="Enter your wallet password"
+                            placeholder="Enter your wallet password"
                             field-size="large"
                             autocomplete="off"
                             name="pwd"
@@ -47,7 +48,7 @@
                     </div>
 
                     <div class="footer">
-                        <button type="submit" class="btn large" :disabled="dSubmitDisabled">
+                        <button type="submit" class="btn large" :disabled="dSubmitDisabled" style="background: #41B86C">
                             Unlock wallet
                         </button>
                     </div>

@@ -58,7 +58,7 @@ main {
 }
 
 a:not(.btn):hover {
-    text-decoration: underline;
+   // text-decoration: underline;
 }
 
 @include links('', '.no-effect') {

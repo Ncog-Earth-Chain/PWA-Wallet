@@ -1,25 +1,27 @@
 <template>
     <footer class="f-footer">
         <div class="narrow-container">
-            <div class="row align-items-center">
-                <div class="col align-center-sm">
+            <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022-2023 Ncog Earth Chain</a>
+            <div class="row align-items-center" >
+                
+                <!--<div class="col align-center-sm">
                     <social-media-links></social-media-links>
                 </div>
                 <div class="col align-center-sm align-end">
-                    <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022-2023 Ncog Earth Chain</a>
-                </div>
+                    
+                </div>-->
             </div>
         </div>
     </footer>
 </template>
 
 <script>
-import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks.vue';
+//import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks.vue';
 
 export default {
-    components: {
-        SocialMediaLinks,
-    },
+    // components: {
+    //     SocialMediaLinks,
+    // },
 };
 </script>
 

@@ -1,26 +1,37 @@
 <template>
-    <div class="welcome-view">
+    <div class="welcome-view col-12">
         <div class="intro">
             <h1>Welcome to NCOG Earth Chain Wallet</h1>
-            <h2>Send, receive and stake your NEC</h2>
+            <span class="subheading-section">Send, receive and stake your NEC</span>
         </div>
 
-        <div class="view-account-main">
+        <div class="row">
+        <div class="col-1"></div>
+        <div class="wallet-box col-10">
+            <div class="view-account-main">
             <section :aria-labelledby="createId" class="main-buttons v2 collapse-md">
-                <h2 :id="createId" class="not-visible">Connect, create or restore wallet</h2>
+                <!--<h2 :id="createId" class="not-visible">Connect, create or restore wallet</h2>-->
 
-                <button class="btn ledger-accounts-btn large w100p" @click="onConnectWalletClick">
-                    <icon data="@/assets/svg/connect.svg" width="32" height="32" aria-hidden="true" />
-                    Connect Wallet
-                </button>
-                <button class="btn create-account-btn large w100p" @click="onCreateWalletClick">
-                    <icon data="@/assets/svg/wallet.svg" width="32" height="32" :fill="false" aria-hidden="true" />
-                    Create Wallet
-                </button>
-                <button class="btn restore-account-btn large w100p" @click="onRestoreWalletClick">
-                    <icon data="@/assets/svg/key.svg" width="32" height="32" aria-hidden="true" />
-                    Restore Wallet
-                </button>
+                <div class="row">
+                    <div class="col-4" style="text-align: center;">
+                        <button class="btn ledger-accounts-btn large w100p wallet-button-blue" @click="onConnectWalletClick">
+                            <!--<icon data="@/assets/svg/connect.svg" width="32" height="32" aria-hidden="true" />-->
+                            Connect Wallet
+                        </button>
+                    </div>
+                    <div class="col-4" style="text-align: center;">
+                        <button class="btn create-account-btn large w100p wallet-button-green" @click="onCreateWalletClick">
+                            <!--<icon data="@/assets/svg/wallet.svg" width="32" height="32" :fill="false" aria-hidden="true" />-->
+                            Create Wallet
+                        </button>
+                    </div>
+                    <div class="col-4" style="text-align: center;">
+                        <button class="btn restore-account-btn large w100p wallet-button-cyan-blue" @click="onRestoreWalletClick">
+                            <!--<icon data="@/assets/svg/key.svg" width="32" height="32" aria-hidden="true" />-->
+                            Restore Wallet
+                        </button>
+                    </div>
+                </div>
                 <!--                <router-link :to="{ name: 'create-account' }" class="btn create-account-btn large w100p">
                     <icon data="@/assets/svg/wallet.svg" width="32" height="32" :fill="false" aria-hidden="true" />
                     Create Wallet
@@ -33,7 +44,7 @@
                     Ledger
                 </router-link>-->
             </section>
-
+            
             <installation-info />
             <section :aria-labelledby="walletsId">
                 <h2 :id="walletsId" class="not-visible">Wallet list</h2>
@@ -43,6 +54,9 @@
             <connect-wallet-window ref="connectWalletWindow" />
             <create-account-window ref="createAccountWindow" />
             <restore-account-window ref="restoreAccountWindow" />
+            </div>
+        </div>
+        <div class="col-1"></div>
         </div>
     </div>
 </template>

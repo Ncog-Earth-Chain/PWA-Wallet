@@ -1,38 +1,31 @@
 <template>
     <div class="funiswapsettings">
-        <f-card class="f-card-double-padding">
-            <f-form ref="form" center-form @f-form-change="onFormChange">
-                <div class="form-body">
-                    <f-input
-                        name="funiswap_slippage_tolerance"
-                        :value="$store.state.fUniswapSlippageTolerance.toString()"
-                        label="Slippage Tolerance"
-                        type="number"
-                        min="0.1"
-                        max="100"
-                        step="0.1"
-                        field-size="large"
-                        validate-on-input
-                        :validator="checkFUniswapSlippageTolerance"
-                    >
-                        <template #top="sProps">
-                            <div class="input-label-layout">
-                                <label :for="sProps.inputId">{{ sProps.label }}</label>
-                                <f-info window-closeable window-class="light" style="margin-inline-start: 8px;">
-                                    Your transaction in fUNI will revert if the price changes unfavorable by more than
-                                    this percentage.
-                                </f-info>
-                            </div>
-                        </template>
-                        <template #bottom="sProps">
-                            <f-message v-show="sProps.showErrorMessage" type="error" alert with-icon>
-                                Value must be between 0.1% and 100%
-                            </f-message>
-                        </template>
-                    </f-input>
-                </div>
-            </f-form>
-        </f-card>
+        <center><f-card class="f-card-double-padding">
+                <f-form ref="form" center-form @f-form-change="onFormChange">
+                    <div class="form-body">
+                        <f-input name="funiswap_slippage_tolerance"
+                            :value="$store.state.fUniswapSlippageTolerance.toString()" label="Slippage Tolerance"
+                            type="number" min="0.1" max="100" step="0.1" field-size="large" validate-on-input
+                            :validator="checkFUniswapSlippageTolerance">
+                            <template #top="sProps">
+                                <div class="input-label-layout">
+                                    <label :for="sProps.inputId">{{ sProps.label }}</label>
+                                    <f-info window-closeable window-class="light" style="margin-inline-start: 8px;">
+                                        Your transaction in fUNI will revert if the price changes unfavorable by more than
+                                        this percentage.
+                                    </f-info>
+                                </div>
+                            </template>
+                            <template #bottom="sProps">
+                                <f-message v-show="sProps.showErrorMessage" type="error" alert with-icon>
+                                    Value must be between 0.1% and 100%
+                                </f-message>
+                            </template>
+                        </f-input>
+                    </div>
+                </f-form>
+            </f-card>
+        </center>
     </div>
 </template>
 
@@ -77,3 +70,14 @@ export default {
     },
 };
 </script>
+<style>
+.inp.large {
+    display: block;
+    border-radius: 14px;
+    padding: 17px 22px;
+    max-width: 796px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 60px;
+}
+</style>

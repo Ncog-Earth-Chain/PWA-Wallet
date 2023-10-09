@@ -4,9 +4,9 @@
 .f-card:not(.off) {
     position: relative;
     padding: var(--f-card-padding);
-    border-radius: var(--f-card-border-radius);
-    background-color: var(--f-card-background-color);
-    box-shadow: var(--f-card-box-shadow);
+  //  border-radius: var(--f-card-border-radius);
+  //  background-color: var(--f-card-background-color);
+   // box-shadow: var(--f-card-box-shadow);
     transition: background-color var(--f-card-transition-length) ease, box-shadow var(--f-card-transition-length) ease, transform var(--f-card-transition-length) ease;
 
     &.f-card-hover:hover, &.f-card-hover:focus-within {
