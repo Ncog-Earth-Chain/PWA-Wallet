@@ -7,11 +7,11 @@
             </template>
             <template #mnemonic-tab>
                 <icon data="@/assets/svg/mnemonic.svg" width="45" height="54" original aria-hidden="true" />
-                <span>Mnemonic</span>
+                <span >Mnemonic</span>
             </template>
             <template #private-key-tab>
                 <icon data="@/assets/svg/private-key.svg" width="45" height="54" original aria-hidden="true" />
-                <span>Private Key</span>
+                <span >Private Key</span>
             </template>
 
             <f-tab id="keystore-tab" title-slot="keystore-tab" title-class="btn secondary">

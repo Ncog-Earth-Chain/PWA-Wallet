@@ -32,3 +32,23 @@
         }
     }
 }
+.copy-button{
+    background: none;
+    border: none;
+    border-right-width: medium;
+    border-right-style: none;
+    border-right-color: currentcolor;
+    border-left-width: medium;
+    border-left-style: none;
+    border-left-color: currentcolor;
+    border-right: 1px solid #00000017;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-right: 1px solid #00000017;
+    border-left: none;
+    padding: 9px 24px;
+    cursor: pointer;
+}

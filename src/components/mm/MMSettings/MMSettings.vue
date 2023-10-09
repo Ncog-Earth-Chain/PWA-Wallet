@@ -1,6 +1,6 @@
 <template>
     <div class="mmsettings">
-        <f-card class="f-card-double-padding">
+        <center><f-card class="f-card-double-padding" style="width:95%">
             <div class="small-container">
                 <template v-if="isMMInstalled">
                     <div class="mmsettings_section">
@@ -54,12 +54,13 @@
                         @custom-token-form-data="onCustomTokenFormData" />
                 </template>
                 <template v-else>
-                    <button class="set" :disabled="installMMInProgress" @click="onInstallMMClick" style="margin-left:150px ;">
+                    <button class="set" :disabled="installMMInProgress" @click="onInstallMMClick">
                         Install Metamask <pulse-loader v-if="installMMInProgress" color="#fff"></pulse-loader>
                     </button>
                 </template>
             </div>
         </f-card>
+    </center>
     </div>
 </template>
 

@@ -40,7 +40,7 @@
         <div class="row wallet-msg no-markers">
             <div class="col-lg-6">
                 <div class="row wallet-b">
-                    <div class="col-lg-4 col-4">
+                    <div class="col-lg-2">
                         <router-link :to="{ name: 'account-history' }" class="wallet" title="Home" aria-label="Wallet info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="65" viewBox="0 0 72 65" fill="none" style="margin-top:20px;">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -50,35 +50,35 @@
                             <h3 style="margin-top:20px;">Wallet</h3>
                         </router-link>
                     </div>
-                    <div class="col-lg-4 col-4">
-                        <router-link :to="{ name: 'account-blockchain-picker-form' }" class="send-cvr" title="Send"
-                            aria-label="Send NEC">
+                    <div class="col-lg-2">
+                        <a @click="$refs.SendPopup.show()" class="send-cvr" title="Send"
+                            aria-label="Send NEC" style="cursor:pointer">
                             <div class="send-img">
                                 <img src="img/Send.svg" alt="">
                             </div>
                             <h3>Send</h3>
-                        </router-link>
+                        </a>
                     </div>
-                    <div class="col-lg-4 col-4">
-                        <router-link :to="{ name: 'account-receive' }" class="receive-cvr" title="Receive"
-                            aria-label="Receive NEC">
+                    <div class="col-lg-2">
+                        <a  @click="$refs.ReceivePopup.show()" class="receive-cvr" title="Receive"
+                            aria-label="Receive NEC" style="cursor:pointer">
                             <div class="receive-img">
                                 <img src="img/Send.svg" alt="">
                             </div>
                             <h3 style="margin-top:20px">Receive</h3>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="nec-status wallet_cover">
-                    <div class="available-cvr">
+                    <div class="available-cvr col-lg-2">
                         <h5>Available</h5>
                         <p> <n-e-c-token-value :value="accountBalance" convert no-currency /><span class="">NEC</span></p>
                         <span class="available-value"><n-e-c-token-value :value="WEIToNEC(accountBalance) * tokenPrice"
                                 with-price-currency no-currency /></span>
                     </div>
-                    <div class="total-cvr">
+                    <div class="total-cvr col-lg-2"> 
                         <h5>Total</h5>
                         <div class="total-val">
                             <p><n-e-c-token-value :value="accountTotalBalance" convert no-currency /><span
@@ -116,10 +116,14 @@
             </div>
 
         </div> -->
+        <send-popup ref="SendPopup" @window-hide="onWindowHide" />
+        <receive-popup ref="ReceivePopup" @window-hide="onWindowHide" />
     </nav>
 </template>
 
 <script>
+import ReceivePopup from '../AccountActionsBox/ReceivePopup.vue';
+import SendPopup from '../AccountActionsBox/SendPopup.vue';
 import FCard from '../core/FCard/FCard.vue';
 import AccountActionsBox from '../AccountActionsBox/AccountActionsBox.vue';
 import { mapGetters } from 'vuex';
@@ -129,7 +133,7 @@ import { UPDATE_ACCOUNT_BALANCE } from '../../store/actions.type.js';
 import NECTokenValue from '@/components/core/NECTokenValue/NECTokenValue.vue';
 
 export default {
-    components: { NECTokenValue, FCard, AccountActionsBox },
+    components: { NECTokenValue, FCard, AccountActionsBox,SendPopup,ReceivePopup },
 
     mixins: [pollingMixin],
 

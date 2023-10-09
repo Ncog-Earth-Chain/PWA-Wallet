@@ -2,44 +2,31 @@
     <section :aria-labelledby="labelId" class="installation-info">
         <h2 :id="labelId" class="not-visible">Wallet instalation</h2>
 
-        <p class="align-center installation-description col-12">
+        <p class="align-center installation-description">
             The NCOG Earth Chain Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all platforms:
         </p>
 
-        <div class=" row">
-            <div class="col-1"></div>
-            
-            <div class="col-2" style="text-align: center;color:black;">
-                <span class="installation-links large" aria-label="Windows installation" @click="showDesktopInfo">
-                    <icon data="@/assets/svg/brands/windows.svg" width="30" height="40" aria-hidden="true" />
-                    Windows
-                </span>
-            </div>
-            <div class="col-2" style="text-align: center;color:black;">
-                <span class="installation-links large" aria-label="macOS installation" @click="showDesktopInfo">
-                    <icon data="@/assets/svg/brands/apple.svg" width="30" height="40" aria-hidden="true" />
-                    macOS
-                </span>
-            </div>
-            <div class="col-2" style="text-align: center;color:black;">
-                <span class="installation-links large" aria-label="Linux installation" @click="showDesktopInfo">
-                    <icon data="@/assets/svg/brands/linux.svg" width="30" height="40" aria-hidden="true" />
-                    Linux
-                </span>
-            </div>
-            <div class="col-2" style="text-align: center;color:black;">
-                <span class="installation-links large" aria-label="iOS installation" @click="showIOSInfo">
-                    <icon data="@/assets/svg/brands/apple.svg" width="30" height="40" aria-hidden="true" />
-                    iOS
-                </span>
-            </div>
-            <div class="col-2" style="text-align: center;color:black;">
-                <span class="installation-links large" aria-label="Android installation" @click="showAndroidInfo">
-                    <icon data="@/assets/svg/brands/android.svg" width="30" height="40" aria-hidden="true" />
-                    Android
-                </span>
-            </div>
-            <div class="col-1"></div>
+        <div class="inst-buttons">
+            <span class="installation-links large" aria-label="Windows installation" @click="showDesktopInfo">
+                <icon data="@/assets/svg/brands/windows.svg" width="30" height="40" aria-hidden="true" />
+                Windows
+            </span>
+            <span class="installation-links large" aria-label="macOS installation" @click="showDesktopInfo">
+                <icon data="@/assets/svg/brands/apple.svg" width="30" height="40" aria-hidden="true" />
+                macOS
+            </span>
+            <span class="installation-links large" aria-label="Linux installation" @click="showDesktopInfo">
+                <icon data="@/assets/svg/brands/linux.svg" width="30" height="40" aria-hidden="true" />
+                Linux
+            </span>
+            <span class="installation-links large" aria-label="iOS installation" @click="showIOSInfo">
+                <icon data="@/assets/svg/brands/apple.svg" width="30" height="40" aria-hidden="true" />
+                iOS
+            </span>
+            <span class="installation-links large" aria-label="Android installation" @click="showAndroidInfo">
+                <icon data="@/assets/svg/brands/android.svg" width="30" height="40" aria-hidden="true" />
+                Android
+            </span>
         </div>
 
         <f-window

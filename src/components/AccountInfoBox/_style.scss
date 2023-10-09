@@ -51,6 +51,9 @@ a.edit, a.copy {
     padding: 9px 24px;
     cursor: pointer;
 }
+.walletdtl-edit a:last-child{
+    border-right: 0 !important;
+}
 a {
     text-decoration: none;
     transition: 0.3s;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="align-center" data-focus>Receive Ncogearthchain NEC</h2>
+        <h2 class="align-center" data-focus>Receive NCOGEarthChain NEC</h2>
 
         <f-card class="receive-coins f-card-double-padding">
             <h3 :id="labelId" class="align-center">Which blockchain are you receiving NEC from?</h3>

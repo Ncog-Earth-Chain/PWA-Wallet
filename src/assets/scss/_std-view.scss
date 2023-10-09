@@ -1,6 +1,18 @@
+.body{
+    height: 100vh;
+    overflow: hidden;
+}
 .std-view {
     main.main {
-        padding-top: 32px;
+        padding: 32px;
+        max-height: calc(100vh - 80px);
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    main.main::-webkit-scrollbar{
+        display: none;
     }
 
     h1, .h1 {

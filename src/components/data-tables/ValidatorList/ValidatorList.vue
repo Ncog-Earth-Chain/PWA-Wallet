@@ -81,6 +81,15 @@
                                 :disabled="item.isOffline || item.isCheater || item.alreadyDelegated"
                                 class="btn select-btn"
                                 :data-validator-id="value"
+                                style="max-width: 100%;outline: none;
+                                border: none;
+                                border-radius: 32.5px;
+                                background: #31bc3c;
+                                color: #fff;
+                                box-shadow: -1px 10px 20px #31bc3c9e;
+                                font-size: 22px;
+                                font-style: normal;
+                                line-height: normal;"
                             >
                                 Select
                             </button>
@@ -91,6 +100,15 @@
                             :disabled="item.isOffline || item.isCheater || item.alreadyDelegated"
                             class="btn select-btn"
                             :data-validator-id="value"
+                            style="max-width: 100%;outline: none;
+                                border: none;
+                                border-radius: 32.5px;
+                                background: #31bc3c;
+                                color: #fff;
+                                box-shadow: -1px 10px 20px #31bc3c9e;
+                                font-size: 22px;
+                                font-style: normal;
+                                line-height: normal;"
                         >
                             Select
                         </button>

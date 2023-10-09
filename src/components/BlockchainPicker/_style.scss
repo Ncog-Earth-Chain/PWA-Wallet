@@ -8,8 +8,13 @@
 
     li {
         flex: 1;
+        padding: 5px;
     }
-
+    li .logo-active {
+        border-radius: 15px;
+        border: 1px solid rgba(49, 188, 60, 0.20);
+        background: rgba(49, 188, 60, 0.09);
+    }
     label {
         display: block;
         width: 100%;

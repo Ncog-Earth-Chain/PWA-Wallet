@@ -1,9 +1,10 @@
 <template>
     <div class="view-settings std-view" style="background-color:white;border-radius: 12px">
+        
         <main class="main">
             <h1>Settings</h1>
 
-            <h2>Ncogearthchain Wallet</h2>
+            <h2>NCOGEarthChain Wallet</h2>
             <settings-form />
 
             <h2>fUNI</h2>

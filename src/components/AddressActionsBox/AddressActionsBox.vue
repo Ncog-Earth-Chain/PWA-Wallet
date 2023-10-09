@@ -114,7 +114,7 @@
         <div class="wallet1-cvr">
             <div class="walletdtl-edit">
                 <f-copy-button :text="currentAccount.address" tooltip="Copy Address" :hide-popover-after="3100"
-                    class="btn large light same-size round">
+                    class="copy-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <g clip-path="url(#clip0_49_4029)">
                             <path
@@ -132,11 +132,8 @@
                         Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you
                         need to
                         use a different address!
-                    </template>
+                    </template>Copy
                 </f-copy-button>
-                <a class="copy">
-                    Copy
-                </a>
                 <a class="copy" @click="$refs.qrWindow.show()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -161,18 +158,24 @@
                     </svg>
                     Edit
                 </a>
-                <a class="edit">
+                <a v-if="currentAccount.isLedgerAccount" class="copy" @click="onVerifyOnLedgerClick">
+                    <icon data="@/assets/svg/check.svg" width="20" height="20" style="color:#31BC3C" />
+                    Verify on Ledger
+                </a>
+                <a class="edit" @click="$refs.removeAccountWindow.show()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M5.18721 0.174316H12.5635C15.4476 0.174316 17.3789 2.19918 17.3789 5.21094V12.1627C17.3789 15.1659 15.4476 17.1899 12.5635 17.1899H5.18721C2.30306 17.1899 0.363281 15.1659 0.363281 12.1627V5.21094C0.363281 2.19918 2.30306 0.174316 5.18721 0.174316ZM11.432 11.2345C11.7213 10.9461 11.7213 10.4782 11.432 10.1889L9.91764 8.67454L11.432 7.1593C11.7213 6.87089 11.7213 6.39445 11.432 6.10518C11.1428 5.81507 10.6748 5.81507 10.3771 6.10518L8.87118 7.61872L7.35679 6.10518C7.05901 5.81507 6.59108 5.81507 6.30182 6.10518C6.01255 6.39445 6.01255 6.87089 6.30182 7.1593L7.81621 8.67454L6.30182 10.1804C6.01255 10.4782 6.01255 10.9461 6.30182 11.2345C6.44645 11.3792 6.64213 11.4566 6.8293 11.4566C7.02498 11.4566 7.21215 11.3792 7.35679 11.2345L8.87118 9.72951L10.3856 11.2345C10.5302 11.3885 10.7174 11.4566 10.9045 11.4566C11.1002 11.4566 11.2874 11.3792 11.432 11.2345Z"
                             fill="#E20000"></path>
                     </svg>
-                    Edit
+                    Remove
                 </a>
             </div>
         </div>
         <q-r-code-window ref="qrWindow" :address="currentAccount.address" @window-hide="onWindowHide">
-            <f-message type="warning" with-icon>
+            <f-message type="warning" with-icon style="color:#E87F40;border-radius: 5px;
+                opacity: 0.5;
+                background: rgba(249, 190, 80, 0.30);font-weight: 400;">
                 Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to use
                 a
                 different address!
@@ -203,7 +206,6 @@ export default {
             default: false,
         },
     },
-
     computed: {
         ...mapGetters(['currentAccount']),
 

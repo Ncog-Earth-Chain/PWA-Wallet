@@ -1,6 +1,6 @@
 <template>
     <div class="settings-form">
-       <center> <f-card class="f-card-double-padding" style="width:80%">
+       <center> <f-card class="f-card-double-padding" style="width:95%">
             <f-form ref="form" center-form @f-form-change="onFormChange" style="width:50%">
                 <fieldset>
                     <legend class="not-visible">Settings form</legend>
@@ -165,7 +165,7 @@ export default {
     // max-width: 796px;
     width: 100%;
     margin-bottom: 30px;
-    height:60px;
+    height:50px;
 }
 
 </style>
