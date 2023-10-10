@@ -6,13 +6,16 @@
 
                 <div class="form-body">
                     <span class="form-label">Address</span>
-                    <div class="break-word">
-                        <b style="padding-inline-end: 16px;">{{ account.address }}</b>
+                    <div class="break-word" style="border-radius: 30px;
+                        background: #EDF1F4;
+                        padding: 10px">
+                        <b style="padding-inline-end: 16px;color:#31BC3C;font-weight: 600;">{{ account.address }}</b>
                         <f-copy-button
                             :text="account.address"
                             tooltip="Copy address to clipboard"
                             :hide-popover-after="3100"
                             class="btn large light same-size round"
+                            style="background: none;"
                         >
                             <template #popover-text>
                                 Address copied to clipboard. <br />
@@ -25,19 +28,24 @@
                             title="Show QR Code"
                             type="button"
                             @click.prevent="$refs.qrWindow.show()"
+                            style="background: none;"
                         >
                             <icon
                                 data="@/assets/svg/monochrome/Options/QR.svg"
                                 width="20"
                                 height="20"
                                 aria-hidden="true"
+                                style="color:#31BC3C;"
                             />
                         </button>
                     </div>
                     <br />
 
                     <span class="form-label">Type</span>
-                    <div class="break-word">
+                    <div class="break-word" style="border-radius: 30px;
+                        background: #EDF1F4;
+                        width: fit-content;
+                        padding: 10px" >
                         {{ $fWallet.getAccountTypeName(account) }}
                     </div>
                     <br />
@@ -79,10 +87,10 @@
                     </f-input>
 
                     <div class="align-center form-buttons">
-                        <a href="#" class="btn large secondary" @click.prevent="onRemoveAccountBtnClick">
+                        <a href="#" class="btn large secondary" @click.prevent="onRemoveAccountBtnClick" style="color:#fff;background-color: #E20000;border:none">
                             Remove Wallet...
                         </a>
-                        <button type="submit" class="btn large">Save</button>
+                        <button type="submit" class="btn large" style="color:#fff;background-color: #31bc3c;box-shadow: -1px 10px 20px #31bc3c9e;">Add</button>
                     </div>
                 </div>
             </fieldset>

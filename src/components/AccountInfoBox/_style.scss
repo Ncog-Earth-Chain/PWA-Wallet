@@ -38,27 +38,36 @@
     max-width: max-content;
     padding: 9px 25px;
     margin-left: auto;
-    padding: 10px
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 a.edit, a.copy {
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-right: 1px solid #00000017;
-    border-left: none;
-    padding: 9px 24px;
-    cursor: pointer;
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border-right: 1px solid #00000017;
+	border-left: none;
+	padding: 9px 24px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 .walletdtl-edit a:last-child{
-    border-right: 0 !important;
+    border: 0 !important;
+
 }
 a {
     text-decoration: none;
     transition: 0.3s;
     display: inline-block;
     color: #fff;
+}
+#app, .view-wallet, .nec-slidebar{
+    height: 100%;
 }
 @include media-max($bp-large) {
     .account-info-box {

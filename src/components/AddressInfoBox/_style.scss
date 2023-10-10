@@ -61,3 +61,11 @@
         }
     }
 }
+.address-info-box .pick-account-btn .an-name{
+    color: #fff !important;
+}
+@media screen and (max-width: 1024px) {
+    .address-info-box .pick-account-btn .an-name{
+        color: #31bc3c !important;
+    }
+}

@@ -298,3 +298,22 @@ a.send-cvr h3 {
     margin: auto;
     padding:20px;
 }
+@media screen and (max-width: 767px) {
+    .walletdtl-edit{
+        position: relative !important;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 576px) {
+    .wallet-b{
+        border-right: none;
+    }
+}
+@media screen and (max-width: 440px) {
+    .wallet-cvr .col-lg-5{
+        margin-top: 100px;
+    }
+    .nec-status{
+        flex-direction: column;
+    }
+}

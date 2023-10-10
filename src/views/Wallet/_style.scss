@@ -25,9 +25,8 @@ a{
         display: flex;
         position: relative;
         z-index: 9;
-        padding-bottom: 40px;
     }
-
+    
     .nec-slidebar {
         display: flex;
         .nec-navbar {
@@ -41,6 +40,8 @@ a{
                 list-style: none;
                 margin: 0;
                 padding: 0;
+                float: left;
+                width: 100%;
                 li {
                     display: list-item;
                     text-align: -webkit-match-parent;
@@ -75,7 +76,7 @@ a{
             padding: 30px;
             max-width: 1570px;
             margin-left: auto;
-            margin-top: -100px;
+            margin-top: -200px;
             position: relative;
             z-index: 9;
         }
@@ -88,6 +89,13 @@ a{
     display: flex;
     align-items: center;
 }
+.view-wallet .close_icon.d-block.d-md-none {
+    float: right;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 76px;
+}
 @include media-max($bp-menu) {
     .view-wallet {
         padding-inline-start: 0;
@@ -99,52 +107,142 @@ a{
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1025px){
     .d-md-none {
         display: none!important;
     }
     
 }
-@media (max-width: 768px) {
-    .nec-navbar {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      z-index: 99;
-      display: none;
-      /* You don't need to set the display property here, it will be controlled dynamically in the Vue component */
-    }
-  }
-  @media (max-width: 767px){
+
+@media (max-width: 767px){
     .view-wallet .nec-logo {
-    padding: 21px 40px 120px 40px;
-    background-size: auto;
-    justify-content: space-between;
-    align-items: center;
+        padding: 21px 40px 120px 40px;
+        background-size: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_bar_open_button {
+        font-size: 24px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        padding: 30px 15px;
+        margin-top: -120px;
+        margin-right: 0;
+    }
 }
-.nav_bar_open_button {
-    font-size: 24px;
+    .view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
+        color: #31bc3c;
+        border-left: 3px solid #31bc3c;
+        background: linear-gradient(90deg, #31bc3c3d 2.52%, rgba(49, 188, 60, 0) 87.6%);
+    }
+    .view-wallet .nec-slidebar .nec-navbar ul li a {
+        padding: 14px 30px;
+        color: #666666;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 14px;
+        text-decoration:none;
+    }
+.f-inp.large.inp{
+    position: relative;
 }
-.view-wallet .nec-slidebar .nec-dtl {
-    padding: 30px 15px;
-    margin-top: -120px;
-    margin-right: 0;
+.f-inp.large.inp span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
+/* Media Query */
+@media screen and (max-width: 1440px) {
+    .view-wallet .nec-logo{
+        padding-bottom: 40px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl{
+        margin-top: -100px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: -11%;
+    }
 }
-.view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
 
-    color: #31bc3c;
-    border-left: 3px solid #31bc3c;
-    background: linear-gradient(90deg, #31bc3c3d 2.52%, rgba(49, 188, 60, 0) 87.6%);
+@media screen and (max-width: 1300px){
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: -13%;
+    }
+}
 
+@media screen and (max-width: 1100px) {
+    .view-wallet .nec-logo{
+        background-size: 150% 100%;
+    }
 }
-.view-wallet .nec-slidebar .nec-navbar ul li a {
-    padding: 14px 30px;
-    color: #666666;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 14px;
-    text-decoration:none;
+
+@media screen and (max-width: 1024px) {
+    .view-wallet .nec-slidebar .nec-navbar{
+        position: absolute;
+        left: -290px;
+        z-index: 999;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .view-wallet .nec-slidebar .nec-navbar.open{
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav_bar_open_button svg{
+        width: 50px;
+        height: 30px !important;
+    }
+    .view-wallet .nec-logo {
+        display: flex;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: 0;
+    }
 }
+@media screen and (min-width: 768px) {
+    .view-wallet .nec-slidebar .nec-dtl {
+        height: calc(100vh - 100px);
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+        scrollbar-width: none;
+    }
+    .view-wallet .nec-slidebar .nec-dtl::-webkit-scrollbar{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .walletdtl-edit {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .copy-button {
+        padding: 9px 12px;
+        width: 100%;
+        border: none;
+        justify-content: flex-start;
+        border-bottom: 1px solid #00000017;
+    }
+    .walletdtl-edit a{
+        border: none;
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 1px solid #00000017;
+    }
+}
+@media screen and (max-width: 400px) {
+    .account-header .f-card-double-padding{
+        padding: 0 !important;
+    }
+}
+
+
+.nec-navbar .router-link-exact-active path {
+    fill: #31BC3C; /* Change this to the color you want for active icons */
+  }
+  
