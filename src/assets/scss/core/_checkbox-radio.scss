@@ -65,7 +65,6 @@ label.option input:checked:disabled + span {
 }
 
 label.option > span.checkbox {
-    //border: $input-border-width solid var(--f-input-border-color);
     border-radius: $checkbox-radius;
 }
 

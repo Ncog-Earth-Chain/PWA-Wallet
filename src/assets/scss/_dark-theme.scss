@@ -66,9 +66,6 @@
         --f-checkbox-background-color: var(--f-darker-color-2);
     }
 
-    @include buttons {
-       // --f-button-light-hover-background-color: var(--f-darker-color-3);
-    }
 
     .toggle-btn {
         --f-toggle-btn-background: var(--f-darker-color-3);

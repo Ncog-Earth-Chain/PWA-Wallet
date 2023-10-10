@@ -11,9 +11,6 @@ body {
     background-color: #F9F9F9;
 }
 
-@include links() {
-   // color: var(--f-link-color);
-}
 
 p {
     //line-height: inherit;

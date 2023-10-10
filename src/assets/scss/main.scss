@@ -57,9 +57,6 @@ main {
     text-decoration: none;
 }
 
-a:not(.btn):hover {
-   // text-decoration: underline;
-}
 
 @include links('', '.no-effect') {
     color: inherit;
