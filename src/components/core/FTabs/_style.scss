@@ -29,8 +29,12 @@
                     font-weight: 600;
                     line-height: normal;
                     border-radius: 10px;
+                    background: url('../../../assets/image/text-bg.png');
+                    background-size: 100% 100%;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
                 }
-
+              
                 &[aria-disabled="true"] {
                     background: 0 0;
                     border: 1px solid transparent;

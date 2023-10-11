@@ -3,7 +3,7 @@
         <f-window
             ref="win"
             modal
-            style="max-width: 600px;"
+            style="max-width: 800px;"
             title="Send NCOG Earth Chain NEC"
             class="double-body-padding c-footer_"
             animation-in="scale-center-enter-active"

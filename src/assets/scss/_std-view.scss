@@ -18,13 +18,7 @@
         font-weight: normal;
     }
 }
-@media screen and (min-width: 768px) {
-    .body{
-        height: 100vh;
-        overflow: hidden;
-    }
-   
-}
+
 @media screen and (max-width: 767px) {
     .settings-form .center-form{
         width: 100% !important;

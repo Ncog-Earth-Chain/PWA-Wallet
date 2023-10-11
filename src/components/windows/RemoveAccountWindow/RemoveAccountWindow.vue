@@ -13,18 +13,14 @@
                 Are you sure you want to remove wallet <span class="break-word">{{ dAccount.address }}</span> ?
             </div>
             <br />
-            <f-message type="warning" with-icon style="color:#E87F40;border-radius: 5px;
-                opacity: 0.5;
-                background: rgba(249, 190, 80, 0.30);font-weight: 400;">
+            <f-message type="warning" with-icon >
                 Removing a wallet clears it from local storage. You will not be able to access it again unless you
                 restore via mnemonic phrase, keystore file or private key. This action is irreversible.
             </f-message>
             <br />
             <div class="align-center form-buttons">
-                <button class="btn large secondary" @click="$refs.win.hide()" style="border-radius: 32.5px;
-                background: rgba(49, 188, 60, 0.20);color:#31BC3C;">Cancel</button>
-                <button class="btn large" @click="onRemoveBtnClick" style="border-radius: 32.5px;
-                background: #E20000;box-shadow: -1px 10px 20px #E20000;">Remove</button>
+                <button class="btn large secondary" @click="$refs.win.hide()" >Cancel</button>
+                <button class="btn large remove-button" @click="onRemoveBtnClick" >Remove</button>
             </div>
         </f-window>
     </div>

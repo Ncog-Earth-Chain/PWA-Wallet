@@ -1,9 +1,9 @@
 @import "../../assets/scss/vars";
 
 .address-info-box {
-    .address {
+    .address, .an-name {
         font-family: $font-family-proxima;
-        font-size: 28px;
+        font-size: 35px !important;
         font-weight: normal;
     }
 

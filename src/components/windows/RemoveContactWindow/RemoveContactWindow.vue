@@ -19,7 +19,7 @@
             <br />
             <div class="align-center form-buttons">
                 <button class="btn large secondary" @click="$refs.win.hide()">Cancel</button>
-                <button class="btn large" @click="onRemoveBtnClick">Remove</button>
+                <button class="btn large remove-button" @click="onRemoveBtnClick">Remove</button>
             </div>
         </f-window>
     </div>

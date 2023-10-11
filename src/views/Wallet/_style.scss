@@ -211,18 +211,7 @@ a{
         margin-top: 0;
     }
 }
-@media screen and (min-width: 768px) {
-    .view-wallet .nec-slidebar .nec-dtl {
-        height: calc(100vh - 100px);
-        overflow: hidden;
-        overflow-y: scroll;
-        padding-bottom: 100px;
-        scrollbar-width: none;
-    }
-    .view-wallet .nec-slidebar .nec-dtl::-webkit-scrollbar{
-        display: none;
-    }
-}
+
 @media screen and (max-width: 576px) {
     .walletdtl-edit {
         display: flex;

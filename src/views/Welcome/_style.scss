@@ -143,3 +143,14 @@ $btns-border-radius: 48px;
     width: 100%;
   }
 }
+.account-name-exists{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .view-account-main .main-buttons .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

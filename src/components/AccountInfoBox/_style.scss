@@ -66,8 +66,8 @@ a {
     display: inline-block;
     color: #fff;
 }
-#app, .view-wallet, .nec-slidebar{
-    height: 100%;
+#app, .view-wallet, .nec-slidebar, body{
+    min-height: 100vh;
 }
 @include media-max($bp-large) {
     .account-info-box {

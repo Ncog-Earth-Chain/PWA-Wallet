@@ -38,7 +38,9 @@
 html {
     transition: filter $transition-length $transition-func;
 }
-
+*{
+    font-family: 'Space Grotesk', sans-serif !important;
+}
 html.offline {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -46,6 +48,7 @@ html.offline {
 
 body {
     letter-spacing: -0.5px;
+    font-family: 'Space Grotesk', sans-serif !important;
 }
 
 main {
@@ -57,6 +60,9 @@ main {
     text-decoration: none;
 }
 
+a:not(.btn):hover {
+   // text-decoration: underline;
+}
 
 @include links('', '.no-effect') {
     color: inherit;

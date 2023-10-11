@@ -14,7 +14,7 @@
         
         
         </main>
-        <h2 style="color:#fff;font-size: 35px;">Home</h2>
+        <h2 style="color:#fff;font-size: 35px;" class="page-title">Home</h2>
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
@@ -44,7 +44,7 @@
                     <div class="nec-status">
                         <div class="available-cvr">
                             <h5>Available</h5>
-                            <p><n-e-c-token-value :value="accountsBalance" no-currency /><span class="">NEC</span></p>
+                            <p class="net-balance"><n-e-c-token-value :value="accountsBalance" no-currency /><span class="">NEC</span></p>
                             <span class="available-value"><n-e-c-token-value
                                     :value="accountsBalance * this.$store.state.tokenPrice" with-price-currency
                                     no-currency /></span>
@@ -52,7 +52,7 @@
                         <div class="total-cvr">
                             <h5>Total</h5>
                             <div class="total-val">
-                                <p><n-e-c-token-value :value="accountsTotalBalance" no-currency /><span class="">NEC</span>
+                                <p class="net-balance"><n-e-c-token-value :value="accountsTotalBalance" no-currency /><span class="">NEC</span>
                                 </p>
                                 <span class="total-value"><n-e-c-token-value
                                         :value="accountsTotalBalance * this.$store.state.tokenPrice" with-price-currency
@@ -67,7 +67,7 @@
             
             <div class="col-lg-12">
                 <h2 :id="walletsId" class="h1">
-                    Wallets <span class="f-records-count count">{{ accounts.length }}</span>
+                    Wallets <span class="f-records-count count1">{{ accounts.length }}</span>
                 </h2>
             </div>
             <div v-for="(account, index) in accounts" :key="account.address" class="col-lg-12">
@@ -93,7 +93,7 @@
                     <div class="nec-statuswall">
                         <div class="available-cvr">
                             <h5>Available</h5>
-                            <p style="display: flex;"><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
+                            <p  class="net-balance" style="display: flex;"><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
                             </p>
                             <span class="available-value"><n-e-c-token-value :value="WEIToNEC(account.balance) * tokenPrice"
                                     with-price-currency no-currency /></span>
@@ -101,7 +101,7 @@
                         <div class="total-cvr">
                             <h5>Total</h5>
                             <div class="total-val">
-                                <p style="display: flex;"><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
+                                <p class="net-balance" style="display: flex;"><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
                                         class="">NEC</span></p>
                                 <span class="total-value"><n-e-c-token-value
                                         :value="WEIToNEC(account.totalBalance) * tokenPrice" with-price-currency
@@ -160,7 +160,7 @@
             <div class="contact-add">
                 <section :aria-labelledby="contactsId">
                     <h2 :id="contactsId" class="h1">
-                        Contacts <span class="f-records-count count">{{ contacts.length }}</span>
+                        Contacts <span class="f-records-count count1">{{ contacts.length }}</span>
                     </h2>
 
                     <contact-list edit-mode />

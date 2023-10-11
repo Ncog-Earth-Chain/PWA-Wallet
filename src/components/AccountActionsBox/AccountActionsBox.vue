@@ -74,14 +74,14 @@
                 <div class="nec-status wallet_cover">
                     <div class="available-cvr col-lg-2">
                         <h5>Available</h5>
-                        <p style="display:flex"> <n-e-c-token-value :value="accountBalance" convert no-currency /><span class="">NEC</span></p>
+                        <p class="net-balance" style="display:flex"> <n-e-c-token-value :value="accountBalance" convert no-currency /><span class="">NEC</span></p>
                         <span class="available-value"><n-e-c-token-value :value="WEIToNEC(accountBalance) * tokenPrice"
                                 with-price-currency no-currency /></span>
                     </div>
                     <div class="total-cvr col-lg-2"> 
                         <h5>Total</h5>
                         <div class="total-val">
-                            <p style="display:flex"><n-e-c-token-value :value="accountTotalBalance" convert no-currency /><span
+                            <p class="net-balance" style="display:flex"><n-e-c-token-value :value="accountTotalBalance" convert no-currency /><span
                                     class="">NEC</span></p>
                             <span class="total-value"><n-e-c-token-value :value="WEIToNEC(accountTotalBalance) * tokenPrice"
                                     with-price-currency no-currency /></span>

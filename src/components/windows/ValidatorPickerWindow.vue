@@ -3,9 +3,7 @@
         <f-window
             ref="win"
             modal
-            style="max-width: 1000px; height: 90%;border-radius: 16px;
-            background: #FFF;
-            box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.06);"
+            style="max-width: 1000px; height: 90%;"
             class="normal-padding"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
