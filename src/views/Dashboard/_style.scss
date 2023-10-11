@@ -236,7 +236,7 @@
         background: #fff;
         box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
         padding: 25px;
-        text-align: center;
+      //  text-align: center;
         width: 100%;
         margin-top: 20px;
         .contact-cvr {
@@ -347,6 +347,18 @@
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
 
+}
+.count{
+    border-radius: 6px;
+    background: #e4f7e1;
+    padding: 2px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #31bc3c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 @media (min-width: 992px){
     .col-lg-3 {

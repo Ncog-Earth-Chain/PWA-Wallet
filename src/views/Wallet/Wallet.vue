@@ -33,7 +33,7 @@ export default {
     mixins: [helpersMixin],
     name: 'Wallet',
 
-    components: { Navigation, },
+    components: { Navigation },
     data() {
         return {
             /** Is drawer visible? */

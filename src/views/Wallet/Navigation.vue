@@ -1,6 +1,6 @@
 <template>
     <div class="nec-navbar" :class="{ 'open': toggle }">
-        <ul>
+        <ul v-if="cItems">
             <li v-for="item in cItems" :key="item.id">
                 <router-link v-if="!item.outerLink" :to="item.url"
                     :class="{ disabled: item.disabled, 'router-link-active': item._active }" :title="item.linkTitle"

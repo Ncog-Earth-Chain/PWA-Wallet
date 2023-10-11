@@ -134,6 +134,14 @@ a{
         color: #31bc3c;
         border-left: 3px solid #31bc3c;
         background: linear-gradient(90deg, #31bc3c3d 2.52%, rgba(49, 188, 60, 0) 87.6%);
+        path{
+            fill: #31BC3C;   
+        }
+    }
+    .view-wallet .nec-slidebar .nec-navbar ul li .disabled{
+        color: #666666 !important;
+        border-left: 3px solid #d6e0d7 !important;
+        background: none !important;
     }
     .view-wallet .nec-slidebar .nec-navbar ul li a {
         padding: 14px 30px;
@@ -245,4 +253,12 @@ a{
 .nec-navbar .router-link-exact-active path {
     fill: #31BC3C; /* Change this to the color you want for active icons */
   }
-  
+  .nec-navbar .disabled path {
+    fill: #666666 !important; /* Change this to the color you want for active icons */
+  }
+  .nec-navbar .disabled{
+
+    cursor: initial;
+    opacity: 0.5;
+    background: none;
+  }

@@ -1,5 +1,6 @@
 <template>
-    <div class="view-dashboard">
+    <div class="view-dashboard" @click="onAccountListClick"
+        @keyup="onAccountListKeyup">
         <!-- <dashboard-header /> -->
 
         <main>
@@ -10,7 +11,7 @@
                 <account-list edit-mode />
             </section> -->
 
-
+        
         
         </main>
         <h2 style="color:#fff;font-size: 35px;">Home</h2>
@@ -63,7 +64,13 @@
             </div>
         </div>
         <div class="row wallet-cvr">
-            <div v-for="(account, index) in accounts" :key="account.address">
+            
+            <div class="col-lg-12">
+                <h2 :id="walletsId" class="h1">
+                    Wallets <span class="f-records-count count">{{ accounts.length }}</span>
+                </h2>
+            </div>
+            <div v-for="(account, index) in accounts" :key="account.address" class="col-lg-12">
                 <div class="col-lg-5">
                     <div class="walletkey-dtl">
                         <div class="wallet-no">
@@ -86,7 +93,7 @@
                     <div class="nec-statuswall">
                         <div class="available-cvr">
                             <h5>Available</h5>
-                            <p><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
+                            <p style="display: flex;"><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
                             </p>
                             <span class="available-value"><n-e-c-token-value :value="WEIToNEC(account.balance) * tokenPrice"
                                     with-price-currency no-currency /></span>
@@ -94,7 +101,7 @@
                         <div class="total-cvr">
                             <h5>Total</h5>
                             <div class="total-val">
-                                <p><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
+                                <p style="display: flex;"><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
                                         class="">NEC</span></p>
                                 <span class="total-value"><n-e-c-token-value
                                         :value="WEIToNEC(account.totalBalance) * tokenPrice" with-price-currency
@@ -105,15 +112,16 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="walletdtl-edit">
-                        <a class="edit"  >
+                        <a class="edit"  :data-address="account.address"
+                                        :data-index="index" >
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M6.3764 17.0884L15.1628 5.72599C15.6403 5.11325 15.8101 4.40484 15.6509 3.68354C15.513 3.0278 15.1097 2.40432 14.5049 1.93133L13.0299 0.759611C11.7459 -0.261614 10.1541 -0.154116 9.24152 1.0176L8.25465 2.2979C8.12731 2.45807 8.15914 2.69456 8.31832 2.82356C8.31832 2.82356 10.812 4.82301 10.8651 4.86601C11.0349 5.02725 11.1622 5.24225 11.1941 5.50024C11.2471 6.00548 10.8969 6.47847 10.377 6.54296C10.1329 6.57521 9.89944 6.49997 9.72966 6.36022L7.1086 4.27477C6.98126 4.1791 6.79025 4.19952 6.68413 4.32852L0.455138 12.3908C0.0518984 12.8961 -0.086052 13.5518 0.0518984 14.186L0.847767 17.6367C0.890213 17.8194 1.04939 17.9484 1.24039 17.9484L4.74222 17.9054C5.37891 17.8947 5.97316 17.6044 6.3764 17.0884ZM11.2797 16.0138H16.9898C17.5469 16.0138 18 16.4728 18 17.0372C18 17.6026 17.5469 18.0605 16.9898 18.0605H11.2797C10.7226 18.0605 10.2695 17.6026 10.2695 17.0372C10.2695 16.4728 10.7226 16.0138 11.2797 16.0138Z"
                                     fill="#31BC3C" />
                             </svg>
                             Edit
+
                         </a>
-                        
                         <a class="copy">
                             
                             <f-copy-button
@@ -152,14 +160,14 @@
             <div class="contact-add">
                 <section :aria-labelledby="contactsId">
                     <h2 :id="contactsId" class="h1">
-                        Contacts <span class="f-records-count">({{ contacts.length }})</span>
+                        Contacts <span class="f-records-count count">{{ contacts.length }}</span>
                     </h2>
 
                     <contact-list edit-mode />
                 </section>
             </div>
         </div>
-        <account-settings-window ref="accountSettingsWindow" :account-data="accountData" @window-hide="onWindowHide" />
+        <account-settings-window  ref="accountSettingsWindow" :account-data="accountData"  />
         <create-account-window ref="createAccountWindow" />
         <restore-account-window ref="restoreAccountWindow" />
         <connect-wallet-window ref="connectWalletWindow" />
@@ -188,7 +196,7 @@ import CreateAccountWindow from '@/components/windows/CreateAccountWindow/Create
 import RestoreAccountWindow from '@/components/windows/RestoreAccountWindow/RestoreAccountWindow.vue';
 import ConnectWalletWindow from '@/components/windows/ConnectWalletWindow/ConnectWalletWindow.vue';
 // import DashboardHeader from '../../components/DashboardHeader/DashboardHeader.vue';
-import AccountList from '../../components/AccountList/AccountList.vue';
+// import AccountList from '../../components/AccountList/AccountList.vue';
 import { mapGetters } from 'vuex';
 import ContactList from '../../components/ContactList/ContactList.vue';
 import { getUniqueId } from '@/utils';
@@ -197,7 +205,7 @@ export default {
     name: 'Dashboard',
 
     components: {
-        ContactList, AccountList , CreateAccountWindow, RestoreAccountWindow, ConnectWalletWindow, NECTokenValue,
+        ContactList , CreateAccountWindow, RestoreAccountWindow, ConnectWalletWindow, NECTokenValue,
         FCopyButton, AccountName, AccountSettingsWindow,
     },
 
