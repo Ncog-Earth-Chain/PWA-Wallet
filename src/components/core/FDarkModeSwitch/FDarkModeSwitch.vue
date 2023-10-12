@@ -33,7 +33,7 @@ export default {
 
     computed: {
         title() {
-            return this.darkModeOn ? 'Switch to light mode' : 'Switch to dark mode';
+            return this.darkModeOn ? 'Future Option' : 'Future Option';
         },
     },
 

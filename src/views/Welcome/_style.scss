@@ -225,11 +225,7 @@ $btns-border-radius: 48px;
         }
     }
 }
-.keystore-form{
-    input[type="text"]{
-        padding: 24px;
-    }
-}
+
 @media screen and (max-width: 900px) {
     .view-account-main .main-buttons .row{
         flex-direction: column;
