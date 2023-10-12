@@ -88,16 +88,7 @@
                                 <br />
                             </template>
 
-                            <button type="submit" class="btn large break-word" style="max-width: 100%;border-radius: 32.5px;
-                                background: #31bc3c;
-                                border: none;
-                                outline: none;
-                                box-shadow: 0 10px 30px -7px #31bc3c;
-                                padding: 12px 30px;
-                                line-height: 1;
-                                margin-top: 20px;
-                                color: #fff;
-                                cursor: pointer;">
+                            <button type="submit" class="btn large break-word custom-continue-button">
                                 Continue
                             </button>
                         </div>

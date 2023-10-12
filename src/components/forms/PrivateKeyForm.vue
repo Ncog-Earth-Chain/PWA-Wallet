@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="footer">
-                        <button type="submit" class="btn large" :disabled="dDisabled" style="background-color:#31BC3C">
+                        <button type="submit" class="btn large bg-green" :disabled="dDisabled">
                             Unlock wallet
                         </button>
                     </div>

@@ -1,15 +1,15 @@
 <template>
     <div class="mnemonic-phrase mnemonic-phrase-verification">
-        <h2 data-focus style="color:#1E1E1E">Verification</h2>
+        <h2 data-focus  class="verification-color">Verification</h2>
 
-        <p style="color:#464646">
+        <p class="p-text">
             Please select the words in the correct order to verify your mnemonic phrase.
         </p>
 
-        <ul v-if="dMnemonicToVerify" class="phrase-list no-markers" @click="onMnemonicToVerifyClick" style="color:#000;font-family: Space Grotesk;">
+        <ul v-if="dMnemonicToVerify" class="phrase-list no-markers c-black" @click="onMnemonicToVerifyClick">
             <li v-for="(item, index) in dMnemonicToVerify" :key="`mn${index}`" :data-idx="index">
                 <span class="num">{{ index + 1 }}</span> {{ item }}
-                <button v-if="item" class="btn light same-size round small" :aria-label="`remove word ${item}`" style="color:#31BC3C">
+                <button v-if="item" class="btn light same-size round small c-green" :aria-label="`remove word ${item}`">
                     <icon data="@/assets/svg/times.svg"></icon>
                 </button>
             </li>
@@ -23,17 +23,13 @@
             @click="onShuffledMnemonicClick"
         >
             <li v-for="(item, index) in dShuffledMnemonic" :key="`mns${index}`">
-                <button class="btn light" :disabled="item.disabled" :data-word="item.word" style="color: #000;
-                    font-family: Space Grotesk;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;">{{ item.word }}</button>
+                <button class="btn light c-black select-words" :disabled="item.disabled" :data-word="item.word">{{ item.word }}</button>
             </li>
         </ul>
 
         <div class="footer">
             <!--            <button class="secondary large" @click="onSubmitButClick">Back</button> &nbsp;-->
-            <button class="btn large" :disabled="dVerifyButDisabled" @click="onVerifyButClick" style="background-color:#31BC3C">Verify</button>
+            <button class="btn large bg-green" :disabled="dVerifyButDisabled" @click="onVerifyButClick">Verify</button>
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="mmsettings">
-        <center><f-card class="f-card-double-padding" style="width:95%">
+        <center><f-card class="f-card-double-padding w-95">
             <div class="small-container">
                 <template v-if="isMMInstalled">
                     <div class="mmsettings_section">

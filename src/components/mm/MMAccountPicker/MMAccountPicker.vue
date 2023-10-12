@@ -16,7 +16,7 @@
         </template>
 
         <div v-if="$mm.isInstalled()" class="form-buttons">
-            <button v-show="!accountExists" class="btn large" @click="onAddAccountClick" style="background: #31bc3c;box-shadow: -1px 10px 20px #31bc3c9e;">Add Account</button>
+            <button v-show="!accountExists" class="btn large add-account-button" @click="onAddAccountClick">Add Account</button>
             <button v-show="accountExists" class="btn large" @click="onOkClick">Ok</button>
         </div>
     </div>

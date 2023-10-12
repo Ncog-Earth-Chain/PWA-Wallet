@@ -33,16 +33,15 @@
             ref="desktopInfo"
             modal
             title="Desktop Installation"
-            style="max-width: 520px;color:#000;background-color: #fff;"
+            style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
+            class="c-black bg-white"
         >
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a style="color:#0E8917;font-weight: 600;
-                        line-height: normal;
-                        letter-spacing: 0.66px;" 
+                        <b>Step 1:</b> Open the <a class="text-link" 
                         href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Chrome</b>
                     </li>
@@ -56,16 +55,15 @@
             ref="iosInfo"
             modal
             title="iOS Installation"
-            style="max-width: 520px;color:#000;background-color: #fff;"
+            style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
+            class="c-black bg-white"
         >
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a style="color:#0E8917;font-weight: 600;
-                        line-height: normal;
-                        letter-spacing: 0.66px;" href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
+                        <b>Step 1:</b> Open the <a class="text-link" href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Safari</b>
                     </li>
                     <li><b>Step 2:</b> Click the <b>Share button</b> in Safari (at the bottom)</li>
@@ -78,16 +76,15 @@
             ref="androidInfo"
             modal
             title="Android Installation"
-            style="max-width: 520px;color:#000;background-color: #fff;"
+            style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
+            class="c-black bg-white"
         >
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a style="color:#0E8917;font-weight: 600;
-                        line-height: normal;
-                        letter-spacing: 0.66px;" href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
+                        <b>Step 1:</b> Open the <a class="text-link" href="https://wallet.ncogchain.earth/">NCOG Earth Chain Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Click <b>Settings</b> (top right corner)</li>

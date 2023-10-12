@@ -39,7 +39,7 @@
                                 </template>
                             </f-copy-button>
                             <button
-                                class="btn large light same-size round"
+                                class="btn large light same-size round c-green"
                                 title="Show QR Code"
                                 type="button"
                                 @click.prevent="$refs.qrWindow.show()"

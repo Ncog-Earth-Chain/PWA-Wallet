@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="footer">
-                        <button type="submit" class="btn large" :disabled="dSubmitDisabled" style="background: #41B86C">
+                        <button type="submit" class="btn large bg-dark-green" :disabled="dSubmitDisabled">
                             Unlock wallet
                         </button>
                     </div>

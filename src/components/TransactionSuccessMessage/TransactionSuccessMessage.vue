@@ -212,7 +212,7 @@ export default {
 
         onContinueBtnClick() {
             const { continueToParams } = this;
-
+            location.reload();
             if (this.continueTo === 'account-history' || this.continueToIsRoute) {
                 this.$router.replace({ name: this.continueTo, params: continueToParams });
             } else if (this.continueTo === 'hide-window') {
