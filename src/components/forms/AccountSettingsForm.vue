@@ -80,7 +80,7 @@
                     </f-input>
 
                     <div class="align-center form-buttons">
-                        <a href="#" class="btn large secondary c-white bg-red b-0" @click.prevent="onRemoveAccountBtnClick">
+                        <a href="#" class="btn large secondary c-white bg-red b-0 remove-wallet-btn" @click.prevent="onRemoveAccountBtnClick">
                             Remove Wallet...
                         </a>
                         <button type="submit" class="btn large c-white bg-green add-btn">Add</button>

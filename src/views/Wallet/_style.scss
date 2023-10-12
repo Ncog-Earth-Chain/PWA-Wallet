@@ -82,6 +82,9 @@ a{
         }
     }
 }
+.view-dashboard{
+    margin-top: -50px;
+}
 .nec-navbar li::before{
     display: none;
 }
@@ -263,6 +266,18 @@ a{
     .installation-info{
         padding-left: 0;
         padding-right: 0;
+    }
+    .view-wallet .nec-logo {
+        z-index: 0;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: 100px;
+    }
+    .view-wallet .nec-logo{
+        padding-top: 100px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall{
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 400px) {

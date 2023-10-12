@@ -231,7 +231,7 @@
         border-radius: 27px;
         background: #f0f0f0;
         max-width: max-content;
-        padding: 9px 25px;
+        padding: 0px 25px !important;
         margin-left: auto;
     }
 
@@ -436,7 +436,90 @@
     font-weight: 500;
     line-height: normal;
 }
-
+.view-transition{
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.08);
+}
+.view-transition .f-card{
+    border-radius: 12px;
+    background: #F2F2F2;
+    box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.08);
+    padding: 50px !important;
+}
+.view-transition .view-account-history{
+    padding: 35px;
+}
+.wallet-msg.no-markers .wallet {
+    h3{
+        color: #3378FC;
+    }
+    svg path{
+        fill: #3378FC !important;
+    }
+    .nec-status.wallet_cover{
+        box-shadow: none !important;
+    }
+}
+.delegations-info{
+    padding: 35px;
+}
+.view-transition .f-form.center-form .form-body{
+    max-width: 700px;
+    width: 100% !important;
+}
+.Validators.pos-fixed.with-header.modal header{
+    background:#fff !important;
+}
+.qrcode.pos-fixed.with-header.modal header,.send-chain.pos-fixed.with-header.modal header,.earth-chain.pos-fixed.with-header.modal header, .add-custom-token.pos-fixed.with-header.modal header, .wallet-settings.pos-fixed.with-header.modal header, .remove-wallet.pos-fixed.with-header.modal header{
+    background: #fff !important;
+}
+.add-custom-token .btn.large{
+    width: 201.376px;
+height: 52.042px;
+}
+.account-settings-form .form-buttons  .secondary.remove-wallet-btn{
+    border-radius: 32.5px !important;
+    background: #E20000 !important;
+    color: #fff !important;
+    font-size: 22px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+}
+.account-settings-form .align-center.form-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.remove-wallet{
+    .align-center.form-buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.view-transition .account-transaction-list-dt{
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    .f-card.f-data-table-card{
+        background: transparent !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        tr:nth-of-type(odd) td{
+            background: #F2F2F2;
+        }
+    }
+    
+}
+.view-settings{
+    padding: 35px;
+}
+.view-settings .settingslinks .f-card-double-padding, .view-settings .settings-form .f-card-double-padding, .view-settings .funiswapsettings  .f-card-double-padding,
+.view-settings .mmsettings .f-card-double-padding{
+    width: 100% !important;
+}
 /* Media Query */ 
 @media screen and (max-width: 1500px){
     .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p{
@@ -461,6 +544,11 @@
     .view-dashboard .walletdtl-edit{
         padding-left:0 !important;
         padding-right: 0 !important;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .view-dashboard a.restore-wallet img, .view-dashboard a.create-wallet img, .view-dashboard a.contect-wall img {
+        max-width: 65px;
     }
 }
 @media screen and (max-width: 1300px) {
@@ -602,8 +690,166 @@
     .view-dashboard .wallet-cvr .walletdtl-edit a:last-child{
         border: none !important;
     }
+    .page-title{
+        display: none;
+    }
+    .address-info-box .pick-account-btn .an-name{
+        color: #fff !important;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .view-dashboard .col-lg-8 .col-lg-4 {
+        width: 33.33% !important;
+        flex: 0 0 128px !important;
+        max-width: 128px !important;
+        min-width: 128px !important;
+        padding: 0 !important;
+    }
+     .view-dashboard .col-lg-8 .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+     .view-dashboard .row > .col-lg-4{
+        padding: 10px;
+     }
+     .view-dashboard a.contect-wall h3, .view-dashboard a.create-wallet h3, .view-dashboard a.restore-wallet h3{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+     }
+     .view-dashboard .wallet-cvr .walletdtl-edit{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 0;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        background-color: transparent;
+     }
+     .view-dashboard .nec-status .net-balance .f-token-value span, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value span, .no-markers .net-balance .f-token-value span{
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+     }
+     .contact-add{
+        h1{
+            font-size: 25px;
+        }
+     }
+     .view-dashboard .wallet-cvr .walletdtl-edit a{
+        flex: 0 0 50%;
+        border-bottom: none;
+        border-right: 1px solid #00000017;
+     }
+     .view-transition .view-account-history {
+        padding: 0;
+    }
+    .view-account .view-transition{
+        padding: 20px 15px;
+    }
+    .f-data-table .mobile-view .mobile-item{
+        float: left;
+    }
+    .view-wallet .nec-logo{
+        align-items: baseline;
+        background: none !important;
+    }
+    .view-wallet .nec-logo::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../../assets/image/NCOG-bg.jpg);
+        width: 100%;
+        height: 420px;
+        z-index: -1;
+        
+    }
+    .view-wallet .nec-logo{
+        z-index: 0;
+        padding-top: 100px;
+    }
+    .view-dashboard {
+        margin-top: 80px;
+    }
+    .view-wallet .nec-slidebar .nec-navbar.open, .view-wallet .nec-slidebar .nec-navbar {
+        z-index: 99999;
+        top:-100px;
+    }
+    .view-transition, .delegations-info{
+        padding: 0;
+    }
+    .delegations-info{
+        padding: 18px;
+    }
+    .std-view h1{
+        text-align: left;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .delegations-info .f-tabs ul{
+        margin: 0 !important;
+    }
+    .view-transition .f-card.f-data-layout, .account-main-content-mt__ .f-card{
+        padding: 0 !important;
+    }
+    .delegations-info .f-tabs ul li{
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .account-settings-form .align-center.form-buttons, .remove-wallet .align-center.form-buttons    {
+        flex-direction: column;
+        gap:30px 0;
+        align-items: center;
+    }
+    .account-settings-form .form-buttons a, .account-settings-form .form-buttons button, .remove-wallet .form-buttons button{
+        max-width: 221px;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 18px;
+        font-style: normal;
+    }
+    .remove-wallet .form-buttons button{
+        margin: 0;
+    }
+    .view-settings{
+        padding: 18px;
+    }
+    .view-settings h2{
+        font-size: 20px;
+    }
+    .view-settings form .f-input, .view-settings form .f-select{
+        margin-bottom: 0;
+    }
+    .mmsettings_section.token .set, .mmsettings_section.token .unset{   
+        margin-bottom: 30px !important;
+    }
+    .view-settings .small-container > p > a{
+        font-size: 18px !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        svg{
+            width: 22px;
+            height: 22px;
+        }
+    }
+    .footer{
+        button{
+            margin-bottom: 20px;
+        }
+    }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .view-dashboard .wallet-cvr .nec-statuswall{
         flex-direction: column;
     }

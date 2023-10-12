@@ -48,3 +48,32 @@
 .tx-confirmation-f-window.f-window .body::-webkit-scrollbar{
     display: none;
 }
+.mmsettings_section{
+    .set, .unset{
+        padding: 18px;
+        border-radius: 50px;
+        max-width: 386.348px;
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .row{
+        flex-wrap: nowrap;
+    }
+    h3{
+        text-align: left;
+    }
+}
+.mmsettings_section.token{
+    .set, .unset{
+        padding: 18px 25px;
+        border-radius: 50px;
+        max-width: fit-content;
+        width: 100%;
+        margin: 0 5px;
+        flex-wrap: nowrap;
+    }
+    h3{
+        text-align: left;
+    }
+}

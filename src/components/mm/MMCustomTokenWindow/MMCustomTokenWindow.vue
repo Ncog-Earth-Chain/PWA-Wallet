@@ -5,7 +5,7 @@
             modal
             style="max-width: 600px;"
             title="Add Custom Token"
-            class="double-body-padding c-footer_"
+            class="double-body-padding c-footer_ add-custom-token"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
             @window-hide="$emit('window-hide', $event)"

@@ -89,7 +89,48 @@ $btns-border-radius: 48px;
         border-radius: $btns-border-radius;
     }
 }
-
+.welcome-view .view-account-main .main-buttons{
+    margin-top: -70px;
+}
+.welcome-view .view-account-main .main-buttons button{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100% !important;
+    max-width: 320px;
+    padding: 25px 0;
+    height: fit-content !important;
+}
+.welcome-view .view-account-main .main-buttons button.ledger-accounts-btn, .welcome-view .view-account-main .main-buttons button.ledger-accounts-btn:hover, .welcome-view .view-account-main .main-buttons button.ledger-accounts-btn:focus,.welcome-view .view-account-main .main-buttons button.ledger-accounts-btn:visited{
+    background-color: #3378FC !important;
+    box-shadow: #3378fca1 0px 25px 40px -7px !important;
+}
+.welcome-view .view-account-main .main-buttons button.create-account-btn, .welcome-view .view-account-main .main-buttons button.create-account-btn:hover, .welcome-view .view-account-main .main-buttons button.create-account-btn:focus, .welcome-view .view-account-main .main-buttons button.create-account-btn:visited{
+    background-color: #41B86C !important;
+    box-shadow: #41b86c85 0px 25px 40px -7px !important;
+}
+.welcome-view .view-account-main .main-buttons button.restore-account-btn, .welcome-view .view-account-main .main-buttons button.restore-account-btn:focus, .welcome-view .view-account-main .main-buttons button.restore-account-btn:visited,.welcome-view .view-account-main .main-buttons button.restore-account-btn:hover{
+    background-color: #0EBEC2 !important;
+    box-shadow: #0ebec282 0px 25px 40px -7px !important;
+}
+.welcome-view .view-account-main .main-buttons button.create-account-btn:hover, .welcome-view .view-account-main .main-buttons button.ledger-accounts-btn:hover, .welcome-view .view-account-main .main-buttons button.restore-account-btn:hover{
+    box-shadow: none !important;
+}
+.installation-info .inst-buttons .installation-links{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.installation-info .inst-buttons .installation-links svg{
+    width: 42px !important;
+    height: 42px !important; 
+}
 @include media-max($bp-small) {
     .welcome-view {
         .intro {
@@ -146,7 +187,49 @@ $btns-border-radius: 48px;
 .account-name-exists{
     overflow: hidden;
 }
+.f-overlay.f-window-overlay{
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.03);
+}
+.create-account-color header, .pos-fixed.with-header.modal header{
+    background: url('../../assets/image/NCOG-bg.jpg') !important;
+}
+.create-account-color .form-body .main .option{
+    display: flex;
+    align-items: revert;
+    gap: 5px;
+    height: auto;
+}
+.create-account-color .form-body .main .c-black{
+    flex: 0 0 90%;
+    margin-top: 0;
+}
 
+.mnemonic-phrase {
+    ul.phrase-list{
+        li{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .num{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .svg-icon{
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+.keystore-form{
+    input[type="text"]{
+        padding: 24px;
+    }
+}
 @media screen and (max-width: 900px) {
     .view-account-main .main-buttons .row{
         flex-direction: column;
@@ -156,4 +239,63 @@ $btns-border-radius: 48px;
 }
 .wallet-text{
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .installation-info .inst-buttons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .view-home .main .logo-section{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .with-header.modal{
+        width: calc(100% - 25px);
+        left: 13px !important
+    }
+    .installation-info .installation-description{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .welcome-view .wallet-text .btn, .welcome-view .wallet-text .btn:visited{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .installation-info .inst-buttons .installation-links{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .installation-info{
+        padding-top: 25px;
+    }
+    .welcome-view .view-account-main .main-buttons button{
+        max-width: 352px;
+        padding: 20px 0;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .welcome-view .intro h1{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .welcome-view .intro .subheading-section{
+        font-size: 20px;
+    }
+    .view-home::before {
+        height: 480px;
+    }
+}
+@media screen and (max-width: 400px){
+    .installation-info .inst-buttons{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

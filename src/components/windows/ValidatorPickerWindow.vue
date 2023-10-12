@@ -3,8 +3,8 @@
         <f-window
             ref="win"
             modal
-            style="max-width: 1000px; height: 90%;"
-            class="normal-padding"
+            style="max-width: 1149px; height: fit-content;"
+            class="normal-padding Validators"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
             @window-hide="onWindowHide"

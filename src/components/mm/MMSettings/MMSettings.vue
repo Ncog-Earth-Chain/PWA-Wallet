@@ -26,9 +26,10 @@
 
                     </div>
 
-                    <div class="mmsettings_section">
+                    <div class="mmsettings_section token">
                         <h3>Assets</h3>
-                        <button id="add_token_btn" class="set" :disabled="addTokenInProgress"
+                        <div class="row">
+                            <button id="add_token_btn" class="set" :disabled="addTokenInProgress"
                             @click="onAddTokenClick">
                             Add Token <pulse-loader v-if="addTokenInProgress" color="#fff"></pulse-loader>
                         </button>
@@ -36,6 +37,8 @@
                             @click="onAddCustomTokenClick">
                             Add Custom Token <pulse-loader v-if="addCustomTokenInProgress" color="#fff"></pulse-loader>
                         </button>
+                        </div>
+                       
                     </div>
 
                     <f-window ref="popover" popover :attach-to="`#${btnId}`" attach-position="auto"

@@ -3,6 +3,7 @@
         ref="qrWindow"
         modal
         title="Address"
+        class="qrcode"
         style="max-width: 620px;"
         animation-in="scale-center-enter-active"
         animation-out="scale-center-leave-active"
