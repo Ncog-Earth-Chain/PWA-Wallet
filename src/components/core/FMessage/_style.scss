@@ -14,7 +14,11 @@
     }
 
     &.warning {
-        color: var(--f-message-warning-color);
+        color: rgb(232, 127, 64);
+        border-radius: 5px;
+        opacity: 0.5;
+        background: rgba(249, 190, 80, 0.3);
+        font-weight: 400;
     }
 
     &.error {
@@ -37,3 +41,15 @@
         }
     }
 }
+.form-buttons .secondary {
+    border-radius: 32.5px !important;
+    background: rgba(49, 188, 60, 0.20) !important;
+    color:#31BC3C !important;
+    border:none !important;
+}
+.form-buttons .remove-button {
+    border-radius: 32.5px !important;
+    background: #E20000 !important;
+    box-shadow: -1px 10px 20px #E20000 !important;
+}
+

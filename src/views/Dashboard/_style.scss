@@ -12,4 +12,582 @@
     main {
         padding-top: 0;
     }
+
+    .nec-status {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 12px;
+        padding: 25px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        max-width: 100%;
+        min-height: 232px;
+        .available-cvr h5, .total-cvr h5 {
+            color: #1e1e1eb3;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+        .available-cvr p, .total-cvr p {
+            color: #1e1e1e;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            span {
+                color: #1e1e1eb3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 15px;
+                display: inline-block;
+            }
+        }
+
+        span.available-value {
+            border-radius: 6px;
+            background: #e4f7e1;
+            padding: 3px 7px;
+            display: inline-block;
+            margin-top: 10px;
+            color: #357d57;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        span.total-value {
+            border-radius: 6px;
+            background: #eee6c2;
+            padding: 3px 7px;
+            display: inline-block;
+            margin-top: 10px;
+            color: #ba5415;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .wallet-cvr {
+        margin: 20px 0px;
+        padding: 30px 10px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.08);
+        .walletkey-dtl{
+            .wallet-no {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: #1e1e1e;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 26px;
+                }
+                span {
+                    border-radius: 6px;
+                    background: #e4f7e1;
+                    padding: 2px 15px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    color: #31bc3c;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+            h5 {
+                margin-top: 25px;
+                margin-bottom: 8px;
+                color: #5094f9;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            p {
+                color: #0e8917;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            h6 {
+                color: #858585;
+                margin-top: 13px;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        
+
+        .nec-statuswall {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 12px;
+            padding: 40px 30px;
+            height: 100%;
+            .available-cvr {
+                padding-right: 30px;
+                margin-right: 30px;
+                position: relative;
+            }
+            .available-cvr h5, .total-cvr h5 {
+                color: #1e1e1eb3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+            .available-cvr p, .total-cvr p {
+                color: #1e1e1e;
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                span {
+                    color: #1e1e1eb3;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-left: 15px;
+                    display: flex;
+                    align-items: end;
+                }
+            }
+
+            span.available-value {
+                border-radius: 6px;
+                background: #e4f7e1;
+                padding: 3px 7px;
+                display: inline-block;
+                margin-top: 10px;
+                color: #357d57;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+    
+            span.total-value {
+                border-radius: 6px;
+                background: #eee6c2;
+                padding: 3px 7px;
+                display: inline-block;
+                margin-top: 10px;
+                color: #ba5415;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        .walletdtl-edit {
+            padding: 10px;
+            a.edit {
+                padding-left: 8px;
+            }
+            a.edit, a.copy {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            a.copy {
+                border-right: 1px solid #00000017;
+                border-left: none;
+                padding-right: 13px;
+            }
+            
+        }
+    }
+    .view-dashboard .wallet-cvr .walletdtl-edit a:last-child{
+        border-right: 0 !important;
+    }
+    .walletdtl-edit {
+        border-radius: 27px;
+        background: #f0f0f0;
+        max-width: max-content;
+        padding: 9px 25px;
+        margin-left: auto;
+    }
+
+    .contact-new {
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+      //  text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        .contact-cvr {
+            display: flex;
+            align-items: center;
+            h4 {
+                color: #1e1e1e;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-right: 26px;
+            }
+            span {
+                border-radius: 6px;
+                background: #e4f7e1;
+                padding: 2px 15px;
+                display: inline-block;
+                color: #31bc3c;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        button.newadd-contct {
+            outline: none;
+            border: none;
+            border-radius: 32.5px;
+            background: #31bc3c;
+            padding: 15px 44px;
+            color: #fff;
+            box-shadow: -1px 10px 20px #31bc3c9e;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 50px;
+            svg {
+                margin-right: 10px;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+        display: inline-block;
+        color: #fff;
+    }
+    a.contect-wall, a.create-wallet, a.restore-wallet {
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a.restore-wallet img, a.create-wallet img, a.contect-wall img{
+        max-width: 106px;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    a.contect-wall h3 {
+        color: #5094f9;
+    }
+
+    a.create-wallet h3 {
+        color: #31bc3c;
+    }
+
+    a.restore-wallet h3 {
+        color: #f9d041;
+    }
+
+    a.contect-wall h3, a.create-wallet h3, a.restore-wallet h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 23px;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+}
+.pl-0{
+    padding-left: 0 !important;
+}
+.pr-0{
+    padding-right: 0 !important;
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+
+}
+.count1{
+    border-radius: 6px;
+    background: #e4f7e1;
+    padding: 2px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #31bc3c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+@media (min-width: 992px){
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .col-lg-12{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.account-info-box {
+	padding: 30px 0 !important;
+}
+.account-name .left-chars, .account-name .right-chars{
+    color: #0E8917;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Media Query */ 
+@media screen and (max-width: 1500px){
+    .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p{
+        margin: 35px 0;
+        font-size: 26px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall{
+        padding: 40px 0px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall .available-cvr p, .view-dashboard .wallet-cvr .nec-statuswall .total-cvr p{
+        font-size: 28px;
+    }
+    .view-dashboard .wallet-cvr .walletkey-dtl .wallet-no, .view-dashboard .contact-new .contact-cvr{
+        align-items: baseline;
+    }
+    .view-dashboard .wallet-cvr .walletkey-dtl .wallet-no span{
+        margin-top: 0;
+    }
+    .view-dashboard .wallet-cvr .walletkey-dtl p{
+        word-wrap: anywhere;
+    }
+    .view-dashboard .walletdtl-edit{
+        padding-left:0 !important;
+        padding-right: 0 !important;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p {
+        margin: 40px 0;
+        font-size: 24px;
+    }
+    .view-dashboard a.restore-wallet img, .view-dashboard a.create-wallet img, .view-dashboard a.contect-wall img {
+        max-width: 50%;
+    }
+    .view-dashboard .nec-status .available-cvr p span, .view-dashboard .nec-status .total-cvr p span {
+        margin-left: 10px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall .available-cvr p, .view-dashboard .wallet-cvr .nec-statuswall .total-cvr p {
+        font-size: 24px;
+    }
+    .available-cvr {
+        padding-right: 0;
+        margin-right: 0;
+        position: relative;
+    }
+    .view-wallet .nec-slidebar .nec-dtl{
+        margin-right: 0 !important;
+    }
+    .walletdtl-edit a.edit, .walletdtl-edit a.copy{
+        padding: 9px 12px;
+    }
+    .view-dashboard .walletdtl-edit{
+        padding-left:0 !important;
+        padding-right: 0 !important;
+    }
+    .view-wallet .nec-slidebar .nec-dtl{
+        max-width: calc(100% - 200px) !important;
+    }
+    .row.wallet-msg, .nec-statuswall{
+        flex-direction: column;
+    }
+    .row.wallet-msg .col-lg-4{
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .view-dashboard .wallet-cvr .walletdtl-edit a.edit, .view-dashboard .wallet-cvr .walletdtl-edit a.copy {
+        font-size: 16px;
+    }
+    .walletdtl-edit{
+        position: absolute;
+        right: 0;
+    }
+    .wallet-cvr .col-lg-3{
+        position: relative;
+    }
+    .view-dashboard .walletdtl-edit{
+        padding-left:0 !important;
+        padding-right: 0 !important;
+    }
+    .view-dashboard .nec-status{
+        flex-direction: column;
+    }
+    .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p {
+        margin: 0px 0;
+        font-size: 24px;
+    }
+    .available-cvr{
+        margin-bottom: 20px;
+    }
+    .view-dashboard a.contect-wall h3, .view-dashboard a.create-wallet h3, .view-dashboard a.restore-wallet h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 23px;
+    }
+    .view-dashboard a.contect-wall, .view-dashboard a.create-wallet, .view-dashboard a.restore-wallet {
+        padding: 10px;
+    }
+    .view-wallet .nec-logo{
+        background-size: 150% 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .view-dashboard .col-lg-8, .view-dashboard .col-lg-4{
+        width: 100%;
+        flex:  0 0 100%;
+    }
+    .view-dashboard .col-lg-8 .col-lg-4{
+        width: 33.333%;
+        flex: 0 0 33.33%;
+    }
+    .walletdtl-edit{
+        position: relative;
+    }
+    .page-title{
+        color: #31bc3c !important
+    }
+    .view-wallet .nec-logo{
+        background-size: auto !important;
+    }
+    .view-wallet .nec-slidebar .nec-dtl{
+        max-width: 100% !important;
+    }
+    .col-lg-12{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .view-dashboard .nec-status {
+        flex-direction: row;
+        max-width: 462px;
+        margin: 0 auto;
+    }
+    .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p {
+        margin: 30px 0;
+        font-size: 24px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall{
+        justify-content: flex-start;
+    }
+    
+    .wallet-cvr{
+        position: relative;
+    }
+    .view-wallet .nec-slidebar{
+        position: relative;
+    }
+    .with-header.modal{
+        z-index: 99999 !important;
+    }
+    .nec-statuswall{
+        flex-direction: row;
+    }
+  
+}
+@media screen and (max-width: 767px) {
+    .view-dashboard a.contect-wall, .view-dashboard a.create-wallet, .view-dashboard a.restore-wallet{
+        max-width: 100%;
+    }
+    .view-dashboard .wallet-cvr .walletdtl-edit a:last-child{
+        border: none !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .view-dashboard .wallet-cvr .nec-statuswall{
+        flex-direction: column;
+    }
 }

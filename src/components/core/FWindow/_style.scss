@@ -19,7 +19,7 @@
 
     &.pos-fixed {
         position: fixed;
-        max-height: 100%;
+        max-height: 700px;
     }
 
     &.pos-absolute {
@@ -83,7 +83,7 @@
         height: 100%;
         overflow: auto;
         padding: var(--f-window-body-padding);
-        background: var(--f-window-body-background);
+        background: #fff;
     }
 
     footer {

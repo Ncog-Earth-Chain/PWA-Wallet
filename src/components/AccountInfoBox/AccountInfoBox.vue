@@ -1,7 +1,8 @@
 <template>
     <f-card class="account-info-box info-box f-card-double-padding">
-        <div class="row no-vert-col-padding align-items-center align-center-lg no-collapse">
-            <div class="col-6 col-12-lg align-center-lg"><account-actions-box /></div>
+        <account-actions-box />
+         <!-- <div class="row no-vert-col-padding align-items-center align-center-lg no-collapse">
+            <div class="col col-12-lg align-center-lg"></div>
             <div class="col balances">
                 <div class="balance">
                     <h2 class="align-center-lg h3">
@@ -12,11 +13,7 @@
                         </span>
                     </h2>
                     <div class="currency">
-                        <n-e-c-token-value
-                            :value="WEIToNEC(accountBalance) * tokenPrice"
-                            with-price-currency
-                            no-currency
-                        />
+                        <n-e-c-token-value :value="WEIToNEC(accountBalance) * tokenPrice" with-price-currency no-currency />
                     </div>
                     <div class="label h3">Available</div>
                 </div>
@@ -29,17 +26,17 @@
                         </span>
                     </h2>
                     <div class="currency">
-                        <n-e-c-token-value
-                            :value="WEIToNEC(accountTotalBalance) * tokenPrice"
-                            with-price-currency
-                            no-currency
-                        />
+                        <n-e-c-token-value :value="WEIToNEC(accountTotalBalance) * tokenPrice" with-price-currency
+                            no-currency />
                     </div>
                     <div class="label h3">Total</div>
                 </div>
             </div>
-        </div>
+        </div>  -->
     </f-card>
+
+        
+    
 </template>
 
 <script>

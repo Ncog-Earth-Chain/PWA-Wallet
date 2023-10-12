@@ -5,7 +5,8 @@
         ul {
             justify-content: space-evenly;
             border-bottom: none;
-
+            flex-wrap: wrap;
+            gap: 30px;
             li {
                 &.btn {
                     flex-direction: column;
@@ -40,5 +41,10 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 400px) {
+    header .title h2{
+        padding-inline-start:0 !important;
     }
 }

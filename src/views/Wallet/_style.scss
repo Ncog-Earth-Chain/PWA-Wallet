@@ -1,8 +1,12 @@
 @import "../../assets/scss/vars";
 
-.view-wallet {
-    padding-inline-start: var(--f-left-menu-width);
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
 
+.view-wallet {
     .main {
         padding-top: 0;
     }
@@ -10,8 +14,88 @@
     .address-info-box {
         margin-bottom: 16px;
     }
-}
 
+    /* main css */
+    .nec-logo {
+        background-image: url(../../assets/image/nec-header-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding: 51px 40px 120px 40px;
+        display: flex;
+        position: relative;
+        z-index: 9;
+    }
+    
+    .nec-slidebar {
+        display: flex;
+        .nec-navbar {
+            width: 287px;
+            padding-top: 120px;
+            padding-bottom: 65px;
+            background: #fff;
+            box-shadow: 0px 4px 150px 0px rgba(0, 0, 0, 0.08);
+            margin-top: -90px;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                float: left;
+                width: 100%;
+                li {
+                    display: list-item;
+                    text-align: -webkit-match-parent;
+                    
+                    a.active {
+                        color: #31bc3c;
+                        border-left: 3px solid #31bc3c;
+                        background: linear-gradient(
+                          90deg,
+                          #31bc3c3d 2.52%,
+                          rgba(49, 188, 60, 0) 87.6%
+                        );
+                    }
+                    a {
+                        padding: 14px 30px;
+                        color: #666666;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-bottom: 14px;
+                        svg {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .nec-dtl {
+            width: 100%;
+            margin-right: 40px;
+            padding: 30px;
+            max-width: 1570px;
+            margin-left: auto;
+            margin-top: -200px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+}
+.nec-navbar li::before{
+    display: none;
+}
+.nec-navbar li a{
+    display: flex;
+    align-items: center;
+}
+.view-wallet .close_icon.d-block.d-md-none {
+    float: right;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 76px;
+}
 @include media-max($bp-menu) {
     .view-wallet {
         padding-inline-start: 0;
@@ -22,3 +106,148 @@
         }
     }
 }
+
+@media (min-width: 1025px){
+    .d-md-none {
+        display: none!important;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .view-wallet .nec-logo {
+        padding: 21px 40px 120px 40px;
+        background-size: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_bar_open_button {
+        font-size: 24px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        padding: 30px 15px;
+        margin-top: -120px;
+        margin-right: 0;
+    }
+}
+    .view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
+        color: #31bc3c;
+        border-left: 3px solid #31bc3c;
+        background: linear-gradient(90deg, #31bc3c3d 2.52%, rgba(49, 188, 60, 0) 87.6%);
+        path{
+            fill: #31BC3C;   
+        }
+    }
+    .view-wallet .nec-slidebar .nec-navbar ul li .disabled{
+        color: #666666 !important;
+        border-left: 3px solid #d6e0d7 !important;
+        background: none !important;
+    }
+    .view-wallet .nec-slidebar .nec-navbar ul li a {
+        padding: 14px 30px;
+        color: #666666;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 14px;
+        text-decoration:none;
+    }
+.f-inp.large.inp{
+    position: relative;
+}
+.f-inp.large.inp span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+/* Media Query */
+@media screen and (max-width: 1440px) {
+    .view-wallet .nec-logo{
+        padding-bottom: 40px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl{
+        margin-top: -100px;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: -11%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: -13%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .view-wallet .nec-logo{
+        background-size: 150% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .view-wallet .nec-slidebar .nec-navbar{
+        position: absolute;
+        left: -290px;
+        z-index: 999;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .view-wallet .nec-slidebar .nec-navbar.open{
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav_bar_open_button svg{
+        width: 50px;
+        height: 30px !important;
+    }
+    .view-wallet .nec-logo {
+        display: flex;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .walletdtl-edit {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .copy-button {
+        padding: 9px 12px;
+        width: 100%;
+        border: none;
+        justify-content: flex-start;
+        border-bottom: 1px solid #00000017;
+    }
+    .walletdtl-edit a{
+        border: none;
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 1px solid #00000017;
+    }
+}
+@media screen and (max-width: 400px) {
+    .account-header .f-card-double-padding{
+        padding: 0 !important;
+    }
+}
+
+
+.nec-navbar .router-link-exact-active path {
+    fill: #31BC3C; /* Change this to the color you want for active icons */
+  }
+  .nec-navbar .disabled path {
+    fill: #666666 !important; /* Change this to the color you want for active icons */
+  }
+  .nec-navbar .disabled{
+
+    cursor: initial;
+    opacity: 0.5;
+    background: none;
+  }

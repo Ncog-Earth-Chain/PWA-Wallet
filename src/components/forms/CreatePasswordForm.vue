@@ -4,7 +4,7 @@
             <fieldset class="">
                 <legend class="h2" data-focus>
                     <template v-if="downloadKeystoreFile">
-                        Create a keystore file and password
+                        <span style="color: #000;">Create a keystore file and password</span>
                     </template>
                     <template v-else>
                         Set the password for your wallet
@@ -15,7 +15,7 @@
                     <div class="main">
                         <f-password-field
                             v-model="primaryPwd"
-                            :label="cSetPasswordT"
+                            placeholder="Set a password"
                             type="password"
                             field-size="large"
                             name="primaryPwd"
@@ -23,11 +23,11 @@
                             validate-on-input
                         >
                             <template #bottom="sProps">
-                                <f-message v-show="sProps.showErrorMessage" type="error" alert with-icon>
+                                <f-message v-show="sProps.showErrorMessage" type="error" alert with-icon style="color:#000;opacity: 0.25;">
                                     Make sure to enter at least 8 and max 200 characters, including one upper-case
                                     letter, a symbol and a number
                                 </f-message>
-                                <f-message v-show="!sProps.showErrorMessage" type="info" with-icon>
+                                <f-message v-show="!sProps.showErrorMessage" type="info" with-icon style="color:#000;opacity: 0.25;">
                                     Make sure to enter at least 8 and max 200 characters, including one upper-case
                                     letter, a symbol and a number
                                 </f-message>
@@ -36,7 +36,7 @@
 
                         <f-password-field
                             v-model="secondaryPwd"
-                            label="Re-enter password"
+                            placeholder="Re-enter password"
                             type="password"
                             field-size="large"
                             name="secondaryPwd"
@@ -52,13 +52,18 @@
 
                         <f-checkbox v-model="confirmation" name="confirmation">
                             <template v-if="downloadKeystoreFile">
+                               <p style="color:#000;opacity: 0.25;font-weight: 500;">
                                 I understand that I will need both the keystore file and the password to access my
                                 wallet. Once I have downloaded the file below, I will safely store it as well as the
                                 password
+                               </p>
                             </template>
                             <template v-else>
-                                I understand that I will need this password to verify all transactions within my wallet.
+                                <p style="color:#000;opacity: 0.25;font-weight: 500;">
+                                    I understand that I will need this password to verify all transactions within my wallet.
                                 I will safely store the password.
+                                </p>
+                               
                             </template>
                         </f-checkbox>
                     </div>
@@ -67,7 +72,7 @@
                         <button
                             type="submit"
                             class="btn large break-word"
-                            style="max-width: 100%;"
+                            style="max-width: 100%;background-color: #41B86C;"
                             :class="{ disabled: submitDisabled }"
                         >
                             <template v-if="downloadKeystoreFile">

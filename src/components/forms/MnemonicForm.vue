@@ -14,13 +14,14 @@
                             field-size="large"
                             cols="30"
                             rows="10"
+                            style="color:#1E1E1E"
                         />
 
                         <f-message v-if="dErrorMsg" type="error" alert with-icon>{{ dErrorMsg }}</f-message>
                     </div>
 
                     <div class="footer">
-                        <button type="submit" class="btn large" :disabled="dDisabled">
+                        <button type="submit" class="btn large" :disabled="dDisabled" style="background-color:#31BC3C">
                             Unlock wallet
                         </button>
                     </div>

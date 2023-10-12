@@ -5,6 +5,7 @@
             modal
             title="Connect Wallet"
             class="connect-wallet-f-window"
+            style="background-color:#FFF;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
             @window-hide="$emit('window-hide', $event)"

@@ -7,9 +7,34 @@
     h2 {
         margin-top: 24px;
         margin-bottom: 8px;
+        margin: 41px 0px 23px;
+        color: #1e1e1e;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 10px;
     }
 
     p {
         padding-bottom: 24px;
+    }
+    .f-card-double-padding{
+
+        border-radius: 12px;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-top: 35px;
+    }
+    .small-container>p>a{
+        color: #31bc3c;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 7px;
+        background: rgba(49, 188, 60, 0.06);
+        padding: 11px 16px;
     }
 }

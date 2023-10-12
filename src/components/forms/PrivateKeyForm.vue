@@ -9,7 +9,7 @@
                         <f-input
                             v-model="dPk"
                             type="text"
-                            label="Please type in your private key"
+                            placeholder="Please type in your private key"
                             field-size="large"
                             autocomplete="off"
                             name="pk"
@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="footer">
-                        <button type="submit" class="btn large" :disabled="dDisabled">
+                        <button type="submit" class="btn large" :disabled="dDisabled" style="background-color:#31BC3C">
                             Unlock wallet
                         </button>
                     </div>

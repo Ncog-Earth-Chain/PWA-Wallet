@@ -7,11 +7,11 @@
             </template>
             <template #mnemonic-tab>
                 <icon data="@/assets/svg/mnemonic.svg" width="45" height="54" original aria-hidden="true" />
-                <span>Mnemonic</span>
+                <span >Mnemonic</span>
             </template>
             <template #private-key-tab>
                 <icon data="@/assets/svg/private-key.svg" width="45" height="54" original aria-hidden="true" />
-                <span>Private Key</span>
+                <span >Private Key</span>
             </template>
 
             <f-tab id="keystore-tab" title-slot="keystore-tab" title-class="btn secondary">
@@ -115,4 +115,9 @@ export default {
 
 <style lang="scss">
 @import 'style';
+.btn.secondary, a.btn:visited.secondary {
+    color:#000;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    background: transparent;
+}
 </style>

@@ -58,7 +58,16 @@
         </ul>
 
         <p v-if="editMode" class="add-contact">
-            <button class="btn large" type="button" @click="onAddContactBtnClick">
+            <button class="btn large" type="button" @click="onAddContactBtnClick" style="outline: none;
+                border: none;
+                border-radius: 32.5px;
+                background: #31bc3c;
+                color: #fff;
+                box-shadow: -1px 10px 20px #31bc3c9e;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;">
                 <icon data="@/assets/svg/plus.svg" width="16" height="16" aria-hidden="true" /> New Contact
             </button>
         </p>

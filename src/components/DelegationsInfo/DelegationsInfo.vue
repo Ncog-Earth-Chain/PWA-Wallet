@@ -1,8 +1,9 @@
 <template>
-    <div class="delegations-info">
+    <div class="delegations-info" style="background-color: white;border-radius:20px">
+        
         <h1 data-focus="staking">Staking</h1>
-
-        <f-tabs class="account-main-content-mt__">
+        <f-tabs class="account-main-content-mt__" >
+            
             <template #delegations>
                 Wallet Delegations
                 <span class="f-records-count">({{ delegationsRecordsCount }})</span>
@@ -22,7 +23,7 @@
                         @all-records-loaded="onDelegationsRecordsLoaded"
                     />
                     <div class="add-delegation-cont">
-                        <button class="btn large" type="button" @click="onAddDelegationBtnClick">
+                        <button class="addDelegation" type="button" @click="onAddDelegationBtnClick">
                             <icon data="@/assets/svg/plus.svg" width="16" height="16" aria-hidden="true" /> Add
                             delegation
                         </button>

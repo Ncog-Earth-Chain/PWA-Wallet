@@ -1,5 +1,5 @@
 <template>
-    <div class="view-account-history">
+    <div class="col view-account-history" style="background-color: white;border-radius:20px">
         <f-tabs>
             <template #transactions>
                 Transactions

@@ -1,6 +1,6 @@
 <template>
     <ul class="blockchain-picker no-markers">
-        <li>
+        <li style="display: flex;">
             <label for="bc-ncogearthchain">
                 <input
                     id="bc-ncogearthchain"
@@ -9,26 +9,28 @@
                     name="blockchain"
                     value="ncogearthchain"
                     class="not-visible"
-                />
+                /> 
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-active.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-active"
+                        style="border-radius:50%;"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-inactive.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-inactive"
+                        style="border-radius:50%"
                     />
-                    <span class="title">Ncogearthchain Ncogearthchain</span>
-                </span>
+                   
+                </span>NCOGEarthChain
             </label>
         </li>
         <li>
@@ -45,22 +47,24 @@
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-active.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-active"
+                        style="border-radius:50%"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-inactive.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-inactive"
+                        style="border-radius:50%"
                     />
-                    <span class="title">Ethereum</span>
-                </span>
+                    
+                </span>Ethereum
             </label>
         </li>
         <li>
@@ -77,22 +81,24 @@
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/binance-active.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-active"
+                        style="border-radius:50%"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/binance-inactive.svg"
-                        width="64"
-                        height="64"
+                        width="50"
+                        height="50"
                         original
                         aria-hidden="true"
                         class="logo-inactive"
-                    />
-                    <span class="title">Binance Chain</span>
+                        style="border-radius:50%"
+                    /> 
                 </span>
+                Binance Chain
             </label>
         </li>
     </ul>

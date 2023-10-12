@@ -25,7 +25,7 @@
                             <template #top="sProps">
                                 <div class="input-label-layout">
                                     <label :for="sProps.inputId">{{ sProps.label }}</label>
-                                    <button type="button" class="btn light small" @click="onEntireBalanceClick">
+                                    <button type="button" class="btn light small" @click="onEntireBalanceClick" style="color:#31BC3C">
                                         Entire Balance -2 NEC
                                     </button>
                                 </div>
@@ -65,7 +65,18 @@
                         </f-input>
 
                         <div class="align-center form-buttons">
-                            <button type="submit" class="btn large break-word" style="max-width: 100%;">
+                            <button type="submit" class="btn large break-word" style="max-width: 100%;outline: none;
+                                border: none;
+                                border-radius: 32.5px;
+                                background: #31bc3c;
+                                padding: 15px 44px;
+                                color: #fff;
+                                box-shadow: -1px 10px 20px #31bc3c9e;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                margin-top: 50px;">
                                 Continue
                             </button>
                         </div>

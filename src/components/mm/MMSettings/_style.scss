@@ -11,3 +11,56 @@
         margin-top: 24px;
     }
 }
+.mmsettings_section {
+    margin-bottom: 8px;
+    width: 700px;
+}
+.set {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0.25rem 1.5rem;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    line-height: 1;
+    min-height: 2.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: initial;
+    text-shadow: none;
+    font-weight: bold;
+    color: #fff;
+    background: #31BC3C;
+    border-radius: 20px;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+    box-shadow: -1px 10px 20px #31bc3c9e;
+}
+.unset {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0.25rem 1.5rem;
+    border: 1px solid rgba(49, 188, 60, 0.60);
+    vertical-align: middle;
+    line-height: 1;
+    min-height: 2.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: initial;
+    text-shadow: none;
+    font-weight: bold;
+    color: #31BC3C;
+    background:rgba(49, 188, 60, 0.15);
+    border-radius: 20px;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+}

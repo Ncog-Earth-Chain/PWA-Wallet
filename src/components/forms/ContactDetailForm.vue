@@ -116,7 +116,16 @@
                         >
                             Remove Contact...
                         </a>
-                        <button type="submit" class="btn large">Save</button>
+                        <button type="submit" class="btn large" style="outline: none;
+                            border: none;
+                            border-radius: 32.5px;
+                            background: #31bc3c;
+                            color: #fff;
+                            box-shadow: -1px 10px 20px #31bc3c9e;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;">Save</button>
                     </div>
                 </div>
             </fieldset>

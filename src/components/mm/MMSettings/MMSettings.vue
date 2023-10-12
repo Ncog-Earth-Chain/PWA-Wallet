@@ -1,89 +1,66 @@
 <template>
     <div class="mmsettings">
-        <f-card class="f-card-double-padding">
+        <center><f-card class="f-card-double-padding" style="width:95%">
             <div class="small-container">
                 <template v-if="isMMInstalled">
                     <div class="mmsettings_section">
                         <h3>Networks</h3>
-                        <button
-                            id="add_mainnet_btn"
-                            class="btn large"
-                            :disabled="addNcogearthchainMainnetInProgress"
-                            @click="onAddChainClick('mainnet')"
-                        >
-                            Add Ncogearthchain Ncogearthchain Mainnet
-                            <pulse-loader v-if="addNcogearthchainMainnetInProgress" color="#fff"></pulse-loader>
-                        </button>
-                        <button
-                            id="add_testnet_btn"
-                            class="btn large secondary"
-                            :disabled="addNcogearthchainTestnetInProgress"
-                            @click="onAddChainClick('testnet')"
-                        >
-                            Add Ncogearthchain Testnet
-                            <pulse-loader v-if="addNcogearthchainTestnetInProgress" color="#1969ff"></pulse-loader>
-                        </button>
+                        <div class="row">
+                            <div class="col-sm">
+                                <button id="add_mainnet_btn" class="set rounded-pill"
+                                    :disabled="addNcogearthchainMainnetInProgress" @click="onAddChainClick('mainnet')">
+                                    Add Ncogearthchain Ncogearthchain Mainnet
+                                    <pulse-loader v-if="addNcogearthchainMainnetInProgress" color="#fff"></pulse-loader>
+                                </button>
+                            </div>
+                            <div class="col-sm">
+                                <button id="add_testnet_btn" class=" unset rounded-pill testnet-button"
+                                    :disabled="addNcogearthchainTestnetInProgress" @click="onAddChainClick('testnet')">
+                                    Add Ncogearthchain Testnet
+                                    <pulse-loader v-if="addNcogearthchainTestnetInProgress" color="#1969ff"></pulse-loader>
+                                </button>
+                            </div>
+
+                        </div>
+
+
                     </div>
 
                     <div class="mmsettings_section">
                         <h3>Assets</h3>
-                        <button
-                            id="add_token_btn"
-                            class="btn large"
-                            :disabled="addTokenInProgress"
-                            @click="onAddTokenClick"
-                        >
+                        <button id="add_token_btn" class="set" :disabled="addTokenInProgress"
+                            @click="onAddTokenClick">
                             Add Token <pulse-loader v-if="addTokenInProgress" color="#fff"></pulse-loader>
                         </button>
-                        <button
-                            id="add_custom_token_btn"
-                            class="btn large secondary"
-                            :disabled="addCustomTokenInProgress"
-                            @click="onAddCustomTokenClick"
-                        >
+                        <button id="add_custom_token_btn" class="unset" :disabled="addCustomTokenInProgress"
+                            @click="onAddCustomTokenClick">
                             Add Custom Token <pulse-loader v-if="addCustomTokenInProgress" color="#fff"></pulse-loader>
                         </button>
                     </div>
 
-                    <f-window
-                        ref="popover"
-                        popover
-                        :attach-to="`#${btnId}`"
-                        attach-position="auto"
-                        preferred-attach-position="top"
-                        :attach-margin="[4, 4, 4, 4]"
-                        :with-header="false"
-                        :hide-after="3800"
-                        animation-in="scale-center-enter-active"
-                        animation-out="scale-center-leave-active"
-                        style="width: auto; max-width: 360px;"
-                    >
+                    <f-window ref="popover" popover :attach-to="`#${btnId}`" attach-position="auto"
+                        preferred-attach-position="top" :attach-margin="[4, 4, 4, 4]" :with-header="false"
+                        :hide-after="3800" animation-in="scale-center-enter-active"
+                        animation-out="scale-center-leave-active" style="width: auto; max-width: 360px;">
                         <slot name="popover-text">
                             {{ popoverText }}
                         </slot>
                     </f-window>
 
-                    <defi-token-picker-window
-                        ref="tokenPicker"
-                        :tokens="defiTokens"
-                        hide-balance
-                        @window-hide="stopLoadingIndicators"
-                        @defi-token-picked="onDefiTokenPicked"
-                    />
+                    <defi-token-picker-window ref="tokenPicker" :tokens="defiTokens" hide-balance
+                        @window-hide="stopLoadingIndicators" @defi-token-picked="onDefiTokenPicked" />
 
-                    <m-m-custom-token-window
-                        ref="customTokenWindow"
-                        @window-hide="stopLoadingIndicators"
-                        @custom-token-form-data="onCustomTokenFormData"
-                    />
+                    <m-m-custom-token-window ref="customTokenWindow" @window-hide="stopLoadingIndicators"
+                        @custom-token-form-data="onCustomTokenFormData" />
                 </template>
                 <template v-else>
-                    <button class="btn large" :disabled="installMMInProgress" @click="onInstallMMClick">
+                    <button class="set" :disabled="installMMInProgress" @click="onInstallMMClick">
                         Install Metamask <pulse-loader v-if="installMMInProgress" color="#fff"></pulse-loader>
                     </button>
                 </template>
             </div>
         </f-card>
+    </center>
     </div>
 </template>
 

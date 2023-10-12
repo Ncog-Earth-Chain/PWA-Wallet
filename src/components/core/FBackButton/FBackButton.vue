@@ -2,7 +2,7 @@
     <span class="f-back-button" @click="onClick">
         <slot>
             <button class="btn light large same-size round" title="Back" aria-label="Go to previous page">
-                <icon data="@/assets/svg/arrow-left.svg" aria-hidden="true" class="rtl-mirror" />
+                <icon data="@/assets/svg/arrow-left.svg" aria-hidden="true" class="rtl-mirror" style="color:#31BC3C" />
             </button>
         </slot>
     </span>
