@@ -701,12 +701,14 @@ height: 52.042px;
         line-height: normal;
     }
     .view-dashboard .col-lg-8 .col-lg-4 {
-        width: 33.33% !important;
-        flex: 0 0 128px !important;
-        max-width: 128px !important;
-        min-width: 128px !important;
+        width: 32.33% !important;
+        flex: 0 0 32.33% !important;
+        max-width: 32.33% !important;
+        min-width: 32.33% !important;
         padding: 0 !important;
-        margin:5px 0 !important;
+    }
+    .view-wallet .nec-slidebar .nec-navbar.open, .view-wallet .nec-slidebar .nec-navbar{
+        top:-200px !important
     }
      .view-dashboard .col-lg-8 .row{
         display: flex;
@@ -849,9 +851,68 @@ height: 52.042px;
             margin-bottom: 20px;
         }
     }
+    .row.wallet-b{
+        display: flex;
+        flex-direction: row !important;
+    }
+    .row.wallet-b .col-lg-2{
+        width: 32.33% !important;
+        flex: 0 0 32.33% !important;
+        max-width: 32.33% !important;
+        min-width: 32.33% !important;
+        padding: 5px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 12px;
+background: #FFF;
+box-shadow: 0px 0px 210px 0px rgba(0, 0, 0, 0.08);
+        img{
+            width: 22px;
+            height: 22px;
+        }
+        
+        svg{
+            width: 50%;
+            margin-top: 0 !important;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+    .wallet-msg.no-markers .wallet h3{
+        margin-top: 0 !important;
+    }
+    .send-img, .receive-img{
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .f-tabs a {
+        white-space: break-spaces !important;
+    }
+    .wallet-msg.no-markers{
+        position: relative;
+    }
+    .wallet-msg.no-markers .col-lg-6{
+        position: absolute;
+        top: -115px;
+    }
+    .col-8.align-center-md.address-col {
+        position: absolute;
+        top: -100px;
+    }
 }
 @media screen and (max-width: 400px) {
     .view-dashboard .wallet-cvr .nec-statuswall{
         flex-direction: column;
+    }
+    .view-wallet .nec-slidebar .nec-navbar.open, .view-wallet .nec-slidebar .nec-navbar{
+        top:-200px !important;
+        width: 220px !important;
     }
 }
