@@ -28,7 +28,7 @@
             <div class="footer">
                 <social-media-links />
                 <div class="copyright">
-                    <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022 Ncogearthchain</a>
+                    <a href="https://ncogchain.earth/" target="_blank" rel="noopener">©2022 NCOGEarthChain</a>
                 </div>
             </div>
         </div>

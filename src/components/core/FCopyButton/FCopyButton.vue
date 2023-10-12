@@ -6,7 +6,7 @@
                 :width="defaultIconSize.toString()"
                 :height="defaultIconSize.toString()"
                 aria-hidden="true"
-                style="color:#31BC3C;background:none"
+                class="c-green bg-none"
             />
         </slot>
 

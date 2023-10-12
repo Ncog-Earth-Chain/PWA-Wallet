@@ -1,6 +1,6 @@
 <template>
     <ul class="blockchain-picker no-markers">
-        <li style="display: flex;">
+        <li>
             <label for="bc-ncogearthchain">
                 <input
                     id="bc-ncogearthchain"
@@ -8,7 +8,7 @@
                     type="radio"
                     name="blockchain"
                     value="ncogearthchain"
-                    class="not-visible"
+                    class="not-visible f-flex"
                 /> 
                 <span>
                     <icon
@@ -17,8 +17,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%;"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-inactive.svg"
@@ -26,8 +25,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     />
                    
                 </span>NCOGEarthChain
@@ -51,8 +49,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-inactive.svg"
@@ -60,8 +57,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     />
                     
                 </span>Ethereum
@@ -85,8 +81,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/binance-inactive.svg"
@@ -94,8 +89,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     /> 
                 </span>
                 Binance Chain

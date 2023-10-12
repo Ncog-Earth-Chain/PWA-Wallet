@@ -30,6 +30,7 @@ p {
   but it will still show up on keyboard focus.
 */
 .js-focus-visible :focus:not(.focus-visible) {
+    color:#000;
     outline: none;
 }
 

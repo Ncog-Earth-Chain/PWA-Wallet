@@ -9,14 +9,14 @@
                             <div class="col-sm">
                                 <button id="add_mainnet_btn" class="set rounded-pill"
                                     :disabled="addNcogearthchainMainnetInProgress" @click="onAddChainClick('mainnet')">
-                                    Add Ncogearthchain Ncogearthchain Mainnet
+                                    Add NCOGEarthChain NCOGEarthChain Mainnet
                                     <pulse-loader v-if="addNcogearthchainMainnetInProgress" color="#fff"></pulse-loader>
                                 </button>
                             </div>
                             <div class="col-sm">
                                 <button id="add_testnet_btn" class=" unset rounded-pill testnet-button"
                                     :disabled="addNcogearthchainTestnetInProgress" @click="onAddChainClick('testnet')">
-                                    Add Ncogearthchain Testnet
+                                    Add NCOGEarthChain Testnet
                                     <pulse-loader v-if="addNcogearthchainTestnetInProgress" color="#1969ff"></pulse-loader>
                                 </button>
                             </div>

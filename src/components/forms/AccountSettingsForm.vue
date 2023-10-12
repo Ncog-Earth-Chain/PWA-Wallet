@@ -6,46 +6,39 @@
 
                 <div class="form-body">
                     <span class="form-label">Address</span>
-                    <div class="break-word" style="border-radius: 30px;
-                        background: #EDF1F4;
-                        padding: 10px">
-                        <b style="padding-inline-end: 16px;color:#31BC3C;font-weight: 600;">{{ account.address }}</b>
+                    <div class="break-word bor-30 p-10 bg-gray">
+                        <b class="acc-address">{{ account.address }}</b>
                         <f-copy-button
                             :text="account.address"
                             tooltip="Copy address to clipboard"
                             :hide-popover-after="3100"
-                            class="btn large light same-size round"
-                            style="background: none;"
+                            class="btn large light same-size round bg-none"
                         >
                             <template #popover-text>
                                 Address copied to clipboard. <br />
-                                Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you
+                                Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you
                                 need to use a different address!
                             </template>
                         </f-copy-button>
                         <button
-                            class="btn large light same-size round"
+                            class="btn large light same-size round bg-none"
                             title="Show QR Code"
                             type="button"
                             @click.prevent="$refs.qrWindow.show()"
-                            style="background: none;"
                         >
                             <icon
                                 data="@/assets/svg/monochrome/Options/QR.svg"
                                 width="20"
                                 height="20"
                                 aria-hidden="true"
-                                style="color:#31BC3C;"
+                                class="c-green"
                             />
                         </button>
                     </div>
                     <br />
 
                     <span class="form-label">Type</span>
-                    <div class="break-word" style="border-radius: 30px;
-                        background: #EDF1F4;
-                        width: fit-content;
-                        padding: 10px" >
+                    <div class="break-word bor-30 p-10 bg-gray fit-content">
                         {{ $fWallet.getAccountTypeName(account) }}
                     </div>
                     <br />
@@ -87,10 +80,10 @@
                     </f-input>
 
                     <div class="align-center form-buttons">
-                        <a href="#" class="btn large secondary" @click.prevent="onRemoveAccountBtnClick" style="color:#fff;background-color: #E20000;border:none">
+                        <a href="#" class="btn large secondary c-white bg-red b-0" @click.prevent="onRemoveAccountBtnClick">
                             Remove Wallet...
                         </a>
-                        <button type="submit" class="btn large" style="color:#fff;background-color: #31bc3c;box-shadow: -1px 10px 20px #31bc3c9e;">Add</button>
+                        <button type="submit" class="btn large c-white bg-green add-btn">Add</button>
                     </div>
                 </div>
             </fieldset>
@@ -100,7 +93,7 @@
 
         <q-r-code-window ref="qrWindow" :address="account.address">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to use a
+                Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>

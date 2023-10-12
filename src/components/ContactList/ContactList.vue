@@ -41,7 +41,7 @@
                                             Address copied to clipboard.
                                             <template v-if="contact.blockchain === 'ncogearthchain'">
                                                 <br />
-                                                Warning: Use this address to receive Ncogearthchain NEC only. If you are
+                                                Warning: Use this address to receive NCOGEarthChain NEC only. If you are
                                                 receiving NEC-ERC20 you need to use a different address!
                                             </template>
                                         </template>
@@ -58,16 +58,7 @@
         </ul>
 
         <p v-if="editMode" class="add-contact">
-            <button class="btn large" type="button" @click="onAddContactBtnClick" style="outline: none;
-                border: none;
-                border-radius: 32.5px;
-                background: #31bc3c;
-                color: #fff;
-                box-shadow: -1px 10px 20px #31bc3c9e;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;">
+            <button class="btn large new-contact-button" type="button" @click="onAddContactBtnClick">
                 <icon data="@/assets/svg/plus.svg" width="16" height="16" aria-hidden="true" /> New Contact
             </button>
         </p>

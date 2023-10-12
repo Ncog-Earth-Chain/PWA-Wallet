@@ -2,7 +2,7 @@
     <div class="send-transaction-form">
         <h2 :id="labelId" class="with-back-btn align-center" data-focus>
             <template v-if="token.address"> Send {{ tokenSymbol }} </template>
-            <template v-else>Send Ncogearthchain NEC</template>
+            <template v-else>Send NCOGEarthChain NEC</template>
             <!-- <f-back-button ref="backButton" :route-name="getBackButtonRoute('account-send-transaction-form')" /> -->
         </h2>
 
@@ -178,7 +178,7 @@ export default {
             amountErrMsg: 'Invalid amount',
             gasPrice: '',
             amount: '',
-            sendToErrorMsg: 'Enter a valid Ncogearthchain NEC address or domain name',
+            sendToErrorMsg: 'Enter a valid NCOGEarthChain NEC address or domain name',
             /** Balance of BNB or ETH account. */
             ETHOrBNBAccountBalance: '',
             minNECToTransfer: appConfig.bnbridgeApi.minNECToTransfer,
@@ -464,7 +464,7 @@ export default {
                 this.windowTitle =
                     this.token && this.token.symbol
                         ? `Send ${this.$defi.getTokenSymbol(this.token)}`
-                        : 'Send Ncogearthchain NEC';
+                        : 'Send NCOGEarthChain NEC';
 
                 this.$refs.confirmationWindow.changeComponent('transaction-confirmation', {
                     txData: { ...data },

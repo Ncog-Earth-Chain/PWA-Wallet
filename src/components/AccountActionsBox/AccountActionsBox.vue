@@ -42,17 +42,17 @@
                 <div class="row wallet-b">
                     <div class="col-lg-2">
                         <router-link :to="{ name: 'account-history' }" class="wallet" title="Home" aria-label="Wallet info">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="65" viewBox="0 0 72 65" fill="none" style="margin-top:20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="65" viewBox="0 0 72 65" fill="none" class="mt-20">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M56.3172 20.0044H71.3611C71.3611 7.92547 64.1236 0.869141 51.8609 0.869141H19.7502C7.48753 0.869141 0.25 7.92547 0.25 19.8504V45.8879C0.25 57.8128 7.48753 64.8691 19.7502 64.8691H51.8609C64.1236 64.8691 71.3611 57.8128 71.3611 45.8879V44.7786H56.3172C49.3352 44.7786 43.6752 39.2603 43.6752 32.4532C43.6752 25.646 49.3352 20.1277 56.3172 20.1277V20.0044ZM56.3181 25.3049H68.7072C70.1734 25.3049 71.362 26.4637 71.362 27.8933V36.8908C71.345 38.3134 70.1663 39.4626 68.7072 39.4792H56.6025C53.0679 39.5256 49.9771 37.1661 49.1754 33.8095C48.7739 31.7258 49.3375 29.5757 50.7152 27.9353C52.0929 26.295 54.1437 25.3321 56.3181 25.3049ZM56.8552 34.765H58.0246C59.5257 34.765 60.7426 33.5785 60.7426 32.115C60.7426 30.6515 59.5257 29.465 58.0246 29.465H56.8552C56.1372 29.4568 55.4458 29.7291 54.9351 30.2212C54.4245 30.7133 54.1371 31.3842 54.1372 32.0842C54.1371 33.5528 55.349 34.7481 56.8552 34.765ZM17.0949 20.0042H37.164C38.6651 20.0042 39.882 18.8177 39.882 17.3542C39.882 15.8906 38.6651 14.7042 37.164 14.7042H17.0949C15.606 14.7041 14.3942 15.8719 14.3768 17.3234C14.3767 18.792 15.5886 19.9873 17.0949 20.0042Z"
                                     fill="#31BC3C"></path>
                             </svg>
-                            <h3 style="margin-top:20px;">Wallet</h3>
+                            <h3 class="mt-20">Wallet</h3>
                         </router-link>
                     </div>
                     <div class="col-lg-2">
                         <a @click="$refs.SendPopup.show()" class="send-cvr" title="Send"
-                            aria-label="Send NEC" style="cursor:pointer">
+                            aria-label="Send NEC">
                             <div class="send-img">
                                 <img src="img/Send.svg" alt="">
                             </div>
@@ -61,11 +61,11 @@
                     </div>
                     <div class="col-lg-2">
                         <a  @click="$refs.ReceivePopup.show()" class="receive-cvr" title="Receive"
-                            aria-label="Receive NEC" style="cursor:pointer">
+                            aria-label="Receive NEC">
                             <div class="receive-img">
                                 <img src="img/Send.svg" alt="">
                             </div>
-                            <h3 style="margin-top:20px">Receive</h3>
+                            <h3 class="mt-20">Receive</h3>
                         </a>
                     </div>
                 </div>
@@ -74,14 +74,14 @@
                 <div class="nec-status wallet_cover">
                     <div class="available-cvr col-lg-2">
                         <h5>Available</h5>
-                        <p class="net-balance" style="display:flex"> <n-e-c-token-value :value="accountBalance" convert no-currency /><span class="">NEC</span></p>
+                        <p class="net-balance d-flex"> <n-e-c-token-value :value="accountBalance" convert no-currency /><span class="">NEC</span></p>
                         <span class="available-value"><n-e-c-token-value :value="WEIToNEC(accountBalance) * tokenPrice"
                                 with-price-currency no-currency /></span>
                     </div>
                     <div class="total-cvr col-lg-2"> 
                         <h5>Total</h5>
                         <div class="total-val">
-                            <p class="net-balance" style="display:flex"><n-e-c-token-value :value="accountTotalBalance" convert no-currency /><span
+                            <p class="net-balance d-flex"><n-e-c-token-value :value="accountTotalBalance" convert no-currency /><span
                                     class="">NEC</span></p>
                             <span class="total-value"><n-e-c-token-value :value="WEIToNEC(accountTotalBalance) * tokenPrice"
                                     with-price-currency no-currency /></span>

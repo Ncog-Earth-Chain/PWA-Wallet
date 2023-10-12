@@ -11,11 +11,10 @@
                         <f-file-input-button
                             name="keystore-file"
                             accept="application/json"
-                            class="secondary large w100p"
+                            class="secondary large w100p keystore-file"
                             @change="onKeystoreFileChange"
-                            style="border:#0E8917 solid 1px"
                         >
-                            <icon data="@/assets/svg/upload.svg" width="20" height="20" style="color: #0E8917;"></icon> <span style="color: #0E8917;">&nbsp; Upload keystore
+                            <icon data="@/assets/svg/upload.svg" width="20" height="20" class="c-green"></icon> <span class="c-green">&nbsp; Upload keystore
                             file</span>
                         </f-file-input-button>
                         <f-message v-if="dKeystoreUploadMsg && !dKeystoreErrorMsg" type="success" with-icon>

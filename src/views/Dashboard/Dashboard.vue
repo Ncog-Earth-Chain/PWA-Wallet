@@ -14,24 +14,24 @@
         
         
         </main>
-        <h2 style="color:#fff;font-size: 35px;" class="page-title">Home</h2>
+        <h2 class="page-title">Home</h2>
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-4">
-                        <a class="contect-wall" @click="onConnectWalletClick" style="cursor:pointer">
+                        <a class="contect-wall" @click="onConnectWalletClick">
                             <img src="img/connect-wallet.png" alt="">
                             <h3>Connect Wallet</h3>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a class="create-wallet" @click="onCreateAWalletClick" style="cursor:pointer">
+                        <a class="create-wallet" @click="onCreateAWalletClick">
                             <img src="img/create-wallet.png" alt="">
                             <h3>Create Wallet</h3>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <a class="restore-wallet" @click="onRestoreWalletClick" style="cursor:pointer">
+                        <a class="restore-wallet" @click="onRestoreWalletClick">
                             <img src="img/restore-wallet.png" alt="">
                             <h3>Restore Wallet</h3>
                         </a>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-lg-4">
-                <div class="col-lg-12 pl-0 pr-0" style="height:100%;">
+                <div class="col-lg-12 pl-0 pr-0 content-page">
                     <div class="nec-status">
                         <div class="available-cvr">
                             <h5>Available</h5>
@@ -93,7 +93,7 @@
                     <div class="nec-statuswall">
                         <div class="available-cvr">
                             <h5>Available</h5>
-                            <p  class="net-balance" style="display: flex;"><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
+                            <p  class="net-balance d-flex"><n-e-c-token-value :value="account.balance" convert no-currency /><span class="">NEC</span>
                             </p>
                             <span class="available-value"><n-e-c-token-value :value="WEIToNEC(account.balance) * tokenPrice"
                                     with-price-currency no-currency /></span>
@@ -101,7 +101,7 @@
                         <div class="total-cvr">
                             <h5>Total</h5>
                             <div class="total-val">
-                                <p class="net-balance" style="display: flex;"><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
+                                <p class="net-balance d-flex"><n-e-c-token-value :value="account.totalBalance" convert no-currency /><span
                                         class="">NEC</span></p>
                                 <span class="total-value"><n-e-c-token-value
                                         :value="WEIToNEC(account.totalBalance) * tokenPrice" with-price-currency
@@ -128,8 +128,7 @@
                                         :text="account.address"
                                         tooltip="Copy address to clipboard"
                                         :default-icon-size="16"
-                                        class="btn light same-size round"
-                                        style="background:none"
+                                        class="btn light same-size round bg-none"
                                     >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <g clip-path="url(#clip0_49_4029)">
@@ -146,9 +145,9 @@
                             </svg>
                                         <template #popover-text>
                                             Address copied to clipboard. <br />
-                                            Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving
+                                            Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving
                                             NEC-ERC20 you need to use a different address!
-                                        </template><span style="color:#000;font-weight: 400;">Copy</span>
+                                        </template><span class="span-copy">Copy</span>
                                     </f-copy-button>
                            
                         </a>

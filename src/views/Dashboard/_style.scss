@@ -12,7 +12,10 @@
     main {
         padding-top: 0;
     }
-
+.page-title{
+    color:#fff;
+    font-size: 35px;
+}
     .nec-status {
         display: flex;
         justify-content: space-around;
@@ -301,6 +304,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor:pointer;
     }
     a.restore-wallet img, a.create-wallet img, a.contect-wall img{
         max-width: 106px;
@@ -338,6 +342,19 @@
 }
 .pr-0{
     padding-right: 0 !important;
+}
+.content-page{
+    height:100%;
+}
+.d-flex{
+    display:flex !important;
+}
+.bg-none{
+    background:none !important;
+}
+.span-copy{
+    color:#000;
+    font-weight: 400;
 }
 .row{
     --bs-gutter-x: 1.5rem;

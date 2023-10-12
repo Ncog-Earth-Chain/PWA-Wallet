@@ -129,6 +129,35 @@ a{
         margin-top: -120px;
         margin-right: 0;
     }
+    .mmsettings_section {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .mmsettings_section .set, .mmsettings_section .testnet-button{
+        width: 100%;
+        white-space: break-spaces;
+        margin: 10px 0;
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+    .mmsettings_section .v-spinner{
+        margin-left: 0;
+    }
+    
+    .settings-form__darkmodeswitches{
+        flex-direction: column;
+        .settings-form__darkmodeswitches{
+            width: 100%;
+        }
+    }
+    .with-header.no-title{
+        width: 100% !important;
+    }
+    .view-account-main .main-buttons .col-4{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
     .view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
         color: #31bc3c;
@@ -230,6 +259,10 @@ a{
         width: 100%;
         justify-content: flex-start;
         border-bottom: 1px solid #00000017;
+    }
+    .installation-info{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media screen and (max-width: 400px) {

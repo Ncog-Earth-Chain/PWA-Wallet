@@ -1,5 +1,5 @@
 <template>
-    <div class="view-settings std-view" style="background-color:white;border-radius: 12px">
+    <div class="view-settings std-view">
         
         <main class="main">
             <h1>Settings</h1>

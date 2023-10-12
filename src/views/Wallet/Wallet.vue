@@ -1,7 +1,7 @@
 <template>
     <div class="view-wallet">
         <div class="nec-logo">
-            <a href="#!" class="nechdr-logo"><img src="img/NEC-logo.svg" alt="nec-logo"></a>
+            <a href="#/" class="nechdr-logo"><img src="img/NEC-logo.svg" alt="nec-logo"></a>
             <a class="nav_bar_open_button d-block d-md-none" @click="toggleNavbar">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#fff" viewBox="0 0 448 512">
                     <path
@@ -14,7 +14,7 @@
             <div class="nec-dtl">
 
                 <router-view></router-view>
-                <!-- <wallet-menu /> -->
+                <!-- <wallet-menu />  -->
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@
                 </h2>
             </template>
             <template #controls>
-                <button class="btn white-btn close-btn same-size round light" title="Close window" style="color:#E00E0E">
+                <button class="btn white-btn close-btn same-size round light c-red" title="Close window">
                     <icon data="@/assets/svg/times.svg" width="20" height="20" />
                 </button>
             </template>
