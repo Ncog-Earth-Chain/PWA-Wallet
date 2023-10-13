@@ -170,6 +170,9 @@ a{
             fill: #31BC3C;   
         }
     }
+    .view-wallet .nec-logo{
+        z-index: 9 !important;
+    }
     .view-wallet .nec-slidebar .nec-navbar ul li .disabled{
         color: #666666 !important;
         border-left: 3px solid #d6e0d7 !important;
@@ -220,7 +223,7 @@ a{
 
 @media screen and (max-width: 1024px) {
     .view-wallet .nec-slidebar .nec-navbar{
-        position: absolute;
+        position: fixed;
         left: -290px;
         z-index: 999;
         height: 100%;
@@ -247,8 +250,6 @@ a{
 @media screen and (max-width: 576px) {
     .walletdtl-edit {
         display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
     }
     .copy-button {
         padding: 9px 12px;
@@ -274,10 +275,26 @@ a{
         margin-top: 100px;
     }
     .view-wallet .nec-logo{
-        padding-top: 100px;
+        padding-top:50px;
     }
     .view-dashboard .wallet-cvr .nec-statuswall{
         padding-bottom: 0;
+    }
+    .view-dashboard .row .col-lg-8 {
+        position: absolute;
+        top: -75px;
+    }
+    .walletdtl-edit{
+        padding: 0;
+        top: -30px;
+        overflow-x: auto;
+    }
+    .wallet-msg.no-markers .col-lg-6{
+        position: absolute;
+        top: -115px;
+    }
+    .account-actions-box.actions-box .wallet-msg.no-markers .col-lg-4{
+        margin-top: 75px;
     }
 }
 @media screen and (max-width: 400px) {

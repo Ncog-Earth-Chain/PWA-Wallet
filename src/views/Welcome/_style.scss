@@ -193,6 +193,10 @@ $btns-border-radius: 48px;
 }
 .create-account-color header, .pos-fixed.with-header.modal header{
     background: url('../../assets/image/NCOG-bg.jpg') !important;
+    h2{
+        color: #fff !important;
+    }
+    
 }
 .create-account-color .form-body .main .option{
     display: flex;
@@ -212,6 +216,8 @@ $btns-border-radius: 48px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            display: flex;
+            align-items: center;
         }
         .num{
             font-size: 20px;
@@ -228,7 +234,6 @@ $btns-border-radius: 48px;
 
 @media screen and (max-width: 900px) {
     .view-account-main .main-buttons .row{
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

@@ -1,8 +1,7 @@
 <template>
     <ul class="blockchain-picker no-markers">
         <li>
-            <label for="bc-ncogearthchain">
-                <input
+            <input
                     id="bc-ncogearthchain"
                     v-model="blockchain"
                     type="radio"
@@ -10,6 +9,8 @@
                     value="ncogearthchain"
                     class="not-visible f-flex"
                 /> 
+            <label for="bc-ncogearthchain">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-active.svg"
@@ -32,8 +33,7 @@
             </label>
         </li>
         <li>
-            <label for="bc-eth">
-                <input
+            <input
                     id="bc-eth"
                     v-model="blockchain"
                     type="radio"
@@ -42,6 +42,8 @@
                     class="not-visible"
                     :disabled="!appConfig.bnbridgeApi.useETH || disableETH"
                 />
+            <label for="bc-eth">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-active.svg"
@@ -64,8 +66,7 @@
             </label>
         </li>
         <li>
-            <label for="bc-binance">
-                <input
+            <input
                     id="bc-binance"
                     v-model="blockchain"
                     type="radio"
@@ -74,6 +75,8 @@
                     class="not-visible"
                     :disabled="!appConfig.bnbridgeApi.useBNB || disableBNB"
                 />
+            <label for="bc-binance">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/binance-active.svg"

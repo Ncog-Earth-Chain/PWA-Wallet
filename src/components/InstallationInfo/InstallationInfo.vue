@@ -36,7 +36,7 @@
             style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
-            class="c-black bg-white"
+            class="c-black bg-white send-chain"
         >
             <div class="inst-content">
                 <ul class="no-markers">
@@ -58,7 +58,7 @@
             style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
-            class="c-black bg-white"
+            class="c-black bg-white send-chain"
         >
             <div class="inst-content">
                 <ul class="no-markers">
@@ -79,7 +79,7 @@
             style="max-width: 520px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
-            class="c-black bg-white"
+            class="c-black bg-white send-chain"
         >
             <div class="inst-content">
                 <ul class="no-markers">

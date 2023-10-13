@@ -493,7 +493,8 @@ export default {
 
         onCancelButtonClick(cancelBtnClicked) {
             if (!cancelBtnClicked) {
-                this.$refs.backButton.goBack();
+               
+                this.$router.push('/dashboard');
             }
         },
     },

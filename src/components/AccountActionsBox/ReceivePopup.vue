@@ -3,7 +3,7 @@
         <f-window
             ref="win"
             modal
-            style="max-width: 700px;"
+            style="max-width: 1120px;"
             class="double-body-padding c-footer_ earth-chain"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"

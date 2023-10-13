@@ -69,6 +69,9 @@ a {
 #app, .view-wallet, .nec-slidebar, body{
     min-height: 100vh;
 }
+body{
+    overflow-x: hidden;
+}
 @include media-max($bp-large) {
     .account-info-box {
         .account-actions-box {

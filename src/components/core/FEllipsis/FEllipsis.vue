@@ -3,8 +3,8 @@
         <span><slot name="prefix"></slot></span>
 
         <template v-if="overflow === 'middle'">
-            <span class="left-chars">{{ leftChars }} </span>
-            <span class="right-chars">{{ rightChars }} </span>
+            <span class="left-chars">{{ leftChars }} {{ rightChars }}</span>
+            <span class="right-chars"> </span>
         </template>
         <template v-else>
             {{ cText }}

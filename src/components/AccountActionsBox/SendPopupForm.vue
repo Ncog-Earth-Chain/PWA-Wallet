@@ -5,7 +5,7 @@
             modal
             style="max-width: 600px;"
            
-            class="double-body-padding c-footer_"
+            class="double-body-padding c-footer_ send-nec"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
             @window-hide="onWindowHide"
