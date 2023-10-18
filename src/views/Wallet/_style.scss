@@ -74,7 +74,7 @@ a{
             width: 100%;
             margin-right: 40px;
             padding: 30px;
-            max-width: 1570px;
+            max-width: calc(100% - 287px);
             margin-left: auto;
             margin-top: -200px;
             position: relative;
@@ -294,7 +294,7 @@ a{
         top: -115px;
     }
     .account-actions-box.actions-box .wallet-msg.no-markers .col-lg-4{
-        margin-top: 75px;
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 400px) {

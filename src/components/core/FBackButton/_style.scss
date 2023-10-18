@@ -22,10 +22,12 @@
 
     .f-back-button {
         position: absolute;
-        left: -8px;
+        left: 0px;
     }
 }
-
+.stake-form{
+    padding: 35px 0;
+}
 html[dir="rtl"], body[dir="rtl"] {
     .with-back-btn {
         .f-back-button {

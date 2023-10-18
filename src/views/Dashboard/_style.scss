@@ -610,7 +610,7 @@ height: 52.042px;
     display: flex;
     align-items: center;
 }
-.transaction-success-message .left-chars{
+.transaction-success-message .left-chars, .transaction-success-message .right-chars{
     border-radius: 30px;
     opacity: 0.5;
     background: #EDF1F4;
@@ -630,6 +630,21 @@ height: 52.042px;
         }
     }
 }
+.f-ellipsis.overflow-middle:not(.fixed-char-pos-start) > .left-chars{
+    max-width: 90%;
+    min-width: 16%;
+}
+.transaction-success-message .break-word a, a.value.clickable, .account-transaction-list-dt table a, .mobile-view.f-data-layout.normal-padding a{
+    float: left;
+    width: 100%;
+}
+.view-gov-home{
+    padding: 20px;
+}
+.contact-detail-form{
+    padding: 30px 0;
+}
+
 /* Media Query */ 
 @media screen and (max-width: 1500px){
     .view-dashboard .nec-status .available-cvr p, .view-dashboard .nec-status .total-cvr p{
@@ -701,10 +716,7 @@ height: 52.042px;
         margin: 0 auto;
         width: 100%;
     }
-    .f-ellipsis.overflow-middle:not(.fixed-char-pos-start) > .left-chars{
-        word-wrap: anywhere;
-        white-space: normal;
-    }
+
 }
 @media screen and (max-width: 1100px) {
     .view-dashboard .wallet-cvr .walletdtl-edit a.edit, .view-dashboard .wallet-cvr .walletdtl-edit a.copy {
@@ -819,6 +831,11 @@ height: 52.042px;
     .page-title{
         display: none;
     }
+    .nec-slidebar {
+        .nec-dtl{
+            width: 100%;
+        }
+    }
     .qrcode.pos-fixed.with-header.modal header,.send-nec.pos-fixed.with-header.modal header,.send-transaction-form-tx-window.pos-fixed.with-header.modal header,.send-chain.pos-fixed.with-header.modal header,.earth-chain.pos-fixed.with-header.modal header, .add-custom-token.pos-fixed.with-header.modal header, .wallet-settings.pos-fixed.with-header.modal header, .remove-wallet.pos-fixed.with-header.modal header{
         background: #fff !important;
         h2{
@@ -888,6 +905,12 @@ height: 52.042px;
         img{
             height: fit-content !important  ;
         }
+    }
+    .with-back-btn .f-back-button{
+        left: 0;
+    }
+    .stake-form{
+        padding: 20px 0;
     }
     .send-transaction-form-tx-window .tx-confirmation .f-card{
         padding: 8px !important;
@@ -1136,9 +1159,7 @@ height: 52.042px;
         align-items: center;
         justify-content: center;
     }
-    .f-tabs a {
-        white-space: break-spaces !important;
-    }
+
     .wallet-msg.no-markers{
         position: relative;
     }
@@ -1151,11 +1172,7 @@ height: 52.042px;
         top: -100px;
     }
     
-    .view-dashboard .row{
-        .col-lg-4 .content-page{
-            margin-top: 75px !important;
-        }
-    }
+    
     .view-dashboard .wallet-cvr{
         margin-top: 0;
         padding-top: 0;
@@ -1194,7 +1211,7 @@ height: 52.042px;
     }
     .walletdtl-edit{
         padding: 0;
-        top: 50px;
+        top: 75px;
         overflow-x: auto;
     }
     .account-actions-box.actions-box .wallet-msg.no-markers .col-lg-4{
@@ -1217,6 +1234,30 @@ height: 52.042px;
     .walletdtl-edit a.edit, .walletdtl-edit a.copy {
         padding: 9px 5px;
     }
+    .account-transaction-list-dt .mobile-view .row.no-collapse{
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+    .f-data-table .mobile-view .mobile-item{
+        float: left;
+        width: 100%;
+    }
+    .view-wallet .nec-logo{
+        z-index: 0;
+        padding-top: 50px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .view-dashboard .row{
+        .col-lg-4 .content-page{
+            margin-top: 75px !important;
+        }
+    }
+    .delegations-info.bg-white.bor-20{
+        position: absolute;
+        top: -62px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 400px) {
     .view-dashboard .wallet-cvr .nec-statuswall{
@@ -1228,7 +1269,7 @@ height: 52.042px;
         width: 220px !important;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
     .wallet.router-link-exact-active.router-link-active svg{
         height: 64px !important;
     }
@@ -1243,5 +1284,8 @@ height: 52.042px;
     }
     .view-gov.std-view .view-transition.animation-container.children-absolute{
         padding: 35px;
+    }
+    .f-tabs a {
+        white-space: break-spaces !important;
     }
 }
