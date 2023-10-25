@@ -4,6 +4,7 @@
             ref="win"
             modal
             title="Remove Wallet"
+            class="remove-wallet"
             style="max-width: 560px;"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"

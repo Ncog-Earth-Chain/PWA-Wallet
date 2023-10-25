@@ -2,7 +2,7 @@
     <div class="send-transaction-form">
         <h2 :id="labelId" class="with-back-btn align-center" data-focus>
             <template v-if="token.address"> Send {{ tokenSymbol }} </template>
-            <template v-else>Send Ncogearthchain NEC</template>
+            <template v-else>Send NCOGEarthChain NEC</template>
             <!-- <f-back-button ref="backButton" :route-name="getBackButtonRoute('account-send-transaction-form')" /> -->
         </h2>
 
@@ -88,16 +88,7 @@
                                 <br />
                             </template>
 
-                            <button type="submit" class="btn large break-word" style="max-width: 100%;border-radius: 32.5px;
-                                background: #31bc3c;
-                                border: none;
-                                outline: none;
-                                box-shadow: 0 10px 30px -7px #31bc3c;
-                                padding: 12px 30px;
-                                line-height: 1;
-                                margin-top: 20px;
-                                color: #fff;
-                                cursor: pointer;">
+                            <button type="submit" class="btn large break-word custom-continue-button">
                                 Continue
                             </button>
                         </div>
@@ -178,7 +169,7 @@ export default {
             amountErrMsg: 'Invalid amount',
             gasPrice: '',
             amount: '',
-            sendToErrorMsg: 'Enter a valid Ncogearthchain NEC address or domain name',
+            sendToErrorMsg: 'Enter a valid NCOGEarthChain NEC address or domain name',
             /** Balance of BNB or ETH account. */
             ETHOrBNBAccountBalance: '',
             minNECToTransfer: appConfig.bnbridgeApi.minNECToTransfer,
@@ -464,7 +455,7 @@ export default {
                 this.windowTitle =
                     this.token && this.token.symbol
                         ? `Send ${this.$defi.getTokenSymbol(this.token)}`
-                        : 'Send Ncogearthchain NEC';
+                        : 'Send NCOGEarthChain NEC';
 
                 this.$refs.confirmationWindow.changeComponent('transaction-confirmation', {
                     txData: { ...data },
@@ -502,7 +493,8 @@ export default {
 
         onCancelButtonClick(cancelBtnClicked) {
             if (!cancelBtnClicked) {
-                this.$refs.backButton.goBack();
+               
+                this.$router.push('/dashboard');
             }
         },
     },

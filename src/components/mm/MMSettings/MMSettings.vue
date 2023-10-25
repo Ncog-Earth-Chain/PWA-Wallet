@@ -1,6 +1,6 @@
 <template>
     <div class="mmsettings">
-        <center><f-card class="f-card-double-padding" style="width:95%">
+        <center><f-card class="f-card-double-padding w-95">
             <div class="small-container">
                 <template v-if="isMMInstalled">
                     <div class="mmsettings_section">
@@ -9,14 +9,14 @@
                             <div class="col-sm">
                                 <button id="add_mainnet_btn" class="set rounded-pill"
                                     :disabled="addNcogearthchainMainnetInProgress" @click="onAddChainClick('mainnet')">
-                                    Add Ncogearthchain Ncogearthchain Mainnet
+                                    Add NCOGEarthChain NCOGEarthChain Mainnet
                                     <pulse-loader v-if="addNcogearthchainMainnetInProgress" color="#fff"></pulse-loader>
                                 </button>
                             </div>
                             <div class="col-sm">
                                 <button id="add_testnet_btn" class=" unset rounded-pill testnet-button"
                                     :disabled="addNcogearthchainTestnetInProgress" @click="onAddChainClick('testnet')">
-                                    Add Ncogearthchain Testnet
+                                    Add NCOGEarthChain Testnet
                                     <pulse-loader v-if="addNcogearthchainTestnetInProgress" color="#1969ff"></pulse-loader>
                                 </button>
                             </div>
@@ -26,9 +26,10 @@
 
                     </div>
 
-                    <div class="mmsettings_section">
+                    <div class="mmsettings_section token">
                         <h3>Assets</h3>
-                        <button id="add_token_btn" class="set" :disabled="addTokenInProgress"
+                        <div class="row">
+                            <button id="add_token_btn" class="set" :disabled="addTokenInProgress"
                             @click="onAddTokenClick">
                             Add Token <pulse-loader v-if="addTokenInProgress" color="#fff"></pulse-loader>
                         </button>
@@ -36,6 +37,8 @@
                             @click="onAddCustomTokenClick">
                             Add Custom Token <pulse-loader v-if="addCustomTokenInProgress" color="#fff"></pulse-loader>
                         </button>
+                        </div>
+                       
                     </div>
 
                     <f-window ref="popover" popover :attach-to="`#${btnId}`" attach-position="auto"

@@ -6,9 +6,15 @@
         }
     }
 }
-
-@media screen and (max-width: 450px) {
+.bg-white{
+    background-color: white !important;
+}
+.bor-20{
+    border-radius:20px !important;
+}
+@media screen and (max-width: 400px) {
     .no-markers{
         flex-direction: column;
+        margin: 0;
     }
 }

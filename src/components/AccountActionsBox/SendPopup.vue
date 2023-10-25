@@ -3,9 +3,9 @@
         <f-window
             ref="win"
             modal
-            style="max-width: 800px;"
+            style="max-width: 1020px;"
             title="Send NCOG Earth Chain NEC"
-            class="double-body-padding c-footer_"
+            class="double-body-padding c-footer_ send-chain"
             animation-in="scale-center-enter-active"
             animation-out="scale-center-leave-active"
             @window-hide="onWindowHide"

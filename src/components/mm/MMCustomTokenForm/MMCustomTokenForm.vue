@@ -41,9 +41,7 @@
             />
 
             <div class="align-center form-buttons">
-                <button type="submit" class="btn large" style="border-radius: 32.5px;
-                background: #31BC3C;box-shadow: -1px 10px 20px #31bc3c9e;
-                ">Add</button>
+                <button type="submit" class="btn large bg-green custom-add-button">Add</button>
             </div>
         </f-form>
     </div>

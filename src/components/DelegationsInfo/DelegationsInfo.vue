@@ -1,5 +1,5 @@
 <template>
-    <div class="delegations-info" style="background-color: white;border-radius:20px">
+    <div class="delegations-info bg-white bor-20">
         
         <h1 data-focus="staking">Staking</h1>
         <f-tabs class="account-main-content-mt__" >

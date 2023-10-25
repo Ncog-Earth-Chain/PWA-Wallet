@@ -2,15 +2,15 @@
     <div class="restore-account-tabs">
         <f-tabs no-style aria-label="Restore Account Tabs" @tab-set="onTabSet">
             <template #keystore-tab>
-                <icon data="@/assets/svg/keystore.svg" width="45" height="54" original aria-hidden="true" />
+                <img src="../../assets/image/keystore.png" width="45" height="54" original aria-hidden="true" />
                 <span>Keystore</span>
             </template>
             <template #mnemonic-tab>
-                <icon data="@/assets/svg/mnemonic.svg" width="45" height="54" original aria-hidden="true" />
+                <img src="../../assets/image/mnemonic.png" width="45" height="54" original aria-hidden="true" />
                 <span >Mnemonic</span>
             </template>
             <template #private-key-tab>
-                <icon data="@/assets/svg/private-key.svg" width="45" height="54" original aria-hidden="true" />
+                <img src="../../assets/image/private-key.png" width="45" height="54" original aria-hidden="true" />
                 <span >Private Key</span>
             </template>
 

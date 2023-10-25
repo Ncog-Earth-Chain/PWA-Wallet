@@ -1,6 +1,6 @@
 <template>
     <div class="settingslinks">
-        <center><f-card class="f-card-double-padding" style="width:95%">
+        <center><f-card class="f-card-double-padding">
             <div class="small-container">
                 <p>
                     <a href="https://explorer.ncogchain.earth/" rel="noopener" target="_blank">

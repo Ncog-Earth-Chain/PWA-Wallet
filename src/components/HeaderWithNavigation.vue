@@ -23,7 +23,7 @@
             <div class="body"></div>
             <div class="footer">
                 <div class="copyright">
-                    <a href="https://ncogearthchain.io/" target="_blank" rel="noopener">©2020 Ncogearthchain</a>
+                    <a href="https://ncogearthchain.io/" target="_blank" rel="noopener">©2020 NCOGEarthChain</a>
                 </div>
             </div>
         </div>

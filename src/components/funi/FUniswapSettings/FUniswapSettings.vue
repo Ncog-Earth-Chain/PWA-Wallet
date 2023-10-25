@@ -1,7 +1,7 @@
 <template>
     <div class="funiswapsettings">
-        <center><f-card class="f-card-double-padding" style="width:95%">
-                <f-form ref="form" center-form @f-form-change="onFormChange" style="width:50%">
+        <center><f-card class="f-card-double-padding w-95">
+                <f-form ref="form" center-form @f-form-change="onFormChange" class="w-50">
                     <div class="form-body">
                         <f-input name="funiswap_slippage_tolerance"
                             :value="$store.state.fUniswapSlippageTolerance.toString()" label="Slippage Tolerance"
@@ -70,14 +70,3 @@ export default {
     },
 };
 </script>
-<style>
-.inp.large {
-    display: block;
-    border-radius: 14px;
-    padding: 17px 22px;
-    max-width: 796px;
-    width: 100%;
-    margin-bottom: 30px;
-    height: 50px;
-}
-</style>

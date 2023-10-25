@@ -42,7 +42,7 @@
                                     >
                                         <template #popover-text>
                                             Address copied to clipboard. <br />
-                                            Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving
+                                            Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving
                                             NEC-ERC20 you need to use a different address!
                                         </template>
                                     </f-copy-button>

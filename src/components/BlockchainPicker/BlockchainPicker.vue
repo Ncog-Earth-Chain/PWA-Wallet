@@ -1,15 +1,16 @@
 <template>
     <ul class="blockchain-picker no-markers">
-        <li style="display: flex;">
-            <label for="bc-ncogearthchain">
-                <input
+        <li>
+            <input
                     id="bc-ncogearthchain"
                     v-model="blockchain"
                     type="radio"
                     name="blockchain"
                     value="ncogearthchain"
-                    class="not-visible"
+                    class="not-visible f-flex"
                 /> 
+            <label for="bc-ncogearthchain">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-active.svg"
@@ -17,8 +18,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%;"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ncogearthchain-inactive.svg"
@@ -26,16 +26,14 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     />
                    
                 </span>NCOGEarthChain
             </label>
         </li>
         <li>
-            <label for="bc-eth">
-                <input
+            <input
                     id="bc-eth"
                     v-model="blockchain"
                     type="radio"
@@ -44,6 +42,8 @@
                     class="not-visible"
                     :disabled="!appConfig.bnbridgeApi.useETH || disableETH"
                 />
+            <label for="bc-eth">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-active.svg"
@@ -51,8 +51,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/ethereum-inactive.svg"
@@ -60,16 +59,14 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     />
                     
                 </span>Ethereum
             </label>
         </li>
         <li>
-            <label for="bc-binance">
-                <input
+            <input
                     id="bc-binance"
                     v-model="blockchain"
                     type="radio"
@@ -78,6 +75,8 @@
                     class="not-visible"
                     :disabled="!appConfig.bnbridgeApi.useBNB || disableBNB"
                 />
+            <label for="bc-binance">
+                
                 <span>
                     <icon
                         data="@/assets/svg/chain-logos/binance-active.svg"
@@ -85,8 +84,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-active"
-                        style="border-radius:50%"
+                        class="logo-active bor-50"
                     />
                     <icon
                         data="@/assets/svg/chain-logos/binance-inactive.svg"
@@ -94,8 +92,7 @@
                         height="50"
                         original
                         aria-hidden="true"
-                        class="logo-inactive"
-                        style="border-radius:50%"
+                        class="logo-inactive bor-50"
                     /> 
                 </span>
                 Binance Chain

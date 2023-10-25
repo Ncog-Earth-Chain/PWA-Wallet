@@ -129,7 +129,7 @@
                     </svg>
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you
+                        Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you
                         need to
                         use a different address!
                     </template>Copy
@@ -159,7 +159,7 @@
                     Edit
                 </a>
                 <a v-if="currentAccount.isLedgerAccount" class="copy" @click="onVerifyOnLedgerClick">
-                    <icon data="@/assets/svg/check.svg" width="20" height="20" style="color:#31BC3C" />
+                    <icon data="@/assets/svg/check.svg" width="20" height="20" class="c-green" />
                     Verify on Ledger
                 </a>
                 <a class="edit" @click="$refs.removeAccountWindow.show()">
@@ -174,7 +174,7 @@
         </div>
         <q-r-code-window ref="qrWindow" :address="currentAccount.address" @window-hide="onWindowHide">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to use
+                Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you need to use
                 a
                 different address!
             </f-message>

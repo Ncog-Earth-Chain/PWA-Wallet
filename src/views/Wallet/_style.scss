@@ -74,13 +74,16 @@ a{
             width: 100%;
             margin-right: 40px;
             padding: 30px;
-            max-width: 1570px;
+            max-width: calc(100% - 287px);
             margin-left: auto;
             margin-top: -200px;
             position: relative;
             z-index: 9;
         }
     }
+}
+.view-dashboard{
+    margin-top: -50px;
 }
 .nec-navbar li::before{
     display: none;
@@ -129,6 +132,35 @@ a{
         margin-top: -120px;
         margin-right: 0;
     }
+    .mmsettings_section {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .mmsettings_section .set, .mmsettings_section .testnet-button{
+        width: 100%;
+        white-space: break-spaces;
+        margin: 10px 0;
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+    .mmsettings_section .v-spinner{
+        margin-left: 0;
+    }
+    
+    .settings-form__darkmodeswitches{
+        flex-direction: column;
+        .settings-form__darkmodeswitches{
+            width: 100%;
+        }
+    }
+    .with-header.no-title{
+        width: 100% !important;
+    }
+    .view-account-main .main-buttons .col-4{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
     .view-wallet .nec-slidebar .nec-navbar ul li .router-link-active{
         color: #31bc3c;
@@ -137,6 +169,9 @@ a{
         path{
             fill: #31BC3C;   
         }
+    }
+    .view-wallet .nec-logo{
+        z-index: 9 !important;
     }
     .view-wallet .nec-slidebar .nec-navbar ul li .disabled{
         color: #666666 !important;
@@ -188,7 +223,7 @@ a{
 
 @media screen and (max-width: 1024px) {
     .view-wallet .nec-slidebar .nec-navbar{
-        position: absolute;
+        position: fixed;
         left: -290px;
         z-index: 999;
         height: 100%;
@@ -215,8 +250,6 @@ a{
 @media screen and (max-width: 576px) {
     .walletdtl-edit {
         display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
     }
     .copy-button {
         padding: 9px 12px;
@@ -230,6 +263,38 @@ a{
         width: 100%;
         justify-content: flex-start;
         border-bottom: 1px solid #00000017;
+    }
+    .installation-info{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .view-wallet .nec-logo {
+        z-index: 0;
+    }
+    .view-wallet .nec-slidebar .nec-dtl {
+        margin-top: 100px;
+    }
+    .view-wallet .nec-logo{
+        padding-top:50px;
+    }
+    .view-dashboard .wallet-cvr .nec-statuswall{
+        padding-bottom: 0;
+    }
+    .view-dashboard .row .col-lg-8 {
+        position: absolute;
+        top: -75px;
+    }
+    .walletdtl-edit{
+        padding: 0;
+        top: -30px;
+        overflow-x: auto;
+    }
+    .wallet-msg.no-markers .col-lg-6{
+        position: absolute;
+        top: -115px;
+    }
+    .account-actions-box.actions-box .wallet-msg.no-markers .col-lg-4{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 400px) {

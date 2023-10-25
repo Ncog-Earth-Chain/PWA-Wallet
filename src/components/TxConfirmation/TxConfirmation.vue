@@ -70,7 +70,7 @@
                     Metamask is not installed.
                 </div>
                 <div v-else-if="!$mm.isCorrectChainId()">
-                    Please, select Ncogearthchain chain in Metamask.
+                    Please, select NCOGEarthChain chain in Metamask.
                 </div>
                 <div v-else-if="mmAccount.toLowerCase() !== currentAccount.address.toLowerCase()">
                     Please, select account <b>{{ currentAccount.address }}</b> in Metamask.
@@ -90,7 +90,7 @@
         >
             <div class="align-center">
                 <div v-if="!$walletConnect.isCorrectChainId()">
-                    Please, select Ncogearthchain Ncogearthchain chain.
+                    Please, select NCOGEarthChain NCOGEarthChain chain.
                 </div>
                 <div v-else-if="walletConnectAccount.toLowerCase() !== currentAccount.address.toLowerCase()">
                     Please, select account <b>{{ currentAccount.address }}</b>

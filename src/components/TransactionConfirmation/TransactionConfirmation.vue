@@ -14,7 +14,7 @@
         >
             <h2 class="not-visible" data-focus>
                 <span v-if="token.address"> Send {{ tokenSymbol }} </span>
-                <span v-else>Send Ncogearthchain NEC</span>
+                <span v-else>Send NCOGEarthChain NEC</span>
             </h2>
 
             <div class="transaction-info">

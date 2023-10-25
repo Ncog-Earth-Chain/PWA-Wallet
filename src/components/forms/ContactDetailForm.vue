@@ -34,12 +34,12 @@
                             >
                                 <template #popover-text>
                                     Address copied to clipboard. <br />
-                                    Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20
+                                    Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20
                                     you need to use a different address!
                                 </template>
                             </f-copy-button>
                             <button
-                                class="btn large light same-size round"
+                                class="btn large light same-size round c-green"
                                 title="Show QR Code"
                                 type="button"
                                 @click.prevent="$refs.qrWindow.show()"
@@ -116,16 +116,7 @@
                         >
                             Remove Contact...
                         </a>
-                        <button type="submit" class="btn large" style="outline: none;
-                            border: none;
-                            border-radius: 32.5px;
-                            background: #31bc3c;
-                            color: #fff;
-                            box-shadow: -1px 10px 20px #31bc3c9e;
-                            font-size: 22px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;">Save</button>
+                        <button type="submit" class="btn large save-button">Save</button>
                     </div>
                 </div>
             </fieldset>
@@ -139,7 +130,7 @@
 
         <q-r-code-window ref="qrWindow" :address="contactData.address">
             <f-message v-show="blockchain === 'ncogearthchain'" type="warning" with-icon>
-                Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to use a
+                Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>

@@ -2,7 +2,7 @@
     <header class="address-info-box" :class="{ 'one-account': accountsLen === 1 }">
         <div class="row align-items-center collapse-md">
             <div class="col-8 align-center-md address-col">
-                <button class="no-style pick-account-btn" title="Select Wallet" @click="onPickAccountBtn">
+                <button  v-if="!mobileView"  class="no-style pick-account-btn" title="Select Wallet" @click="onPickAccountBtn">
                     <account-name :account="currentAccount" class="address" hide-address />
                     <!--
                     <account-name :account="currentAccount" class="address" hide-address>
@@ -19,7 +19,7 @@
                     </f-ellipsis>
                     -->
                 </button>
-                <button
+                <!-- <button
                     v-if="mobileView"
                     id="address-more-actions-btn"
                     class="btn light same-size round"
@@ -27,7 +27,10 @@
                     @click="$refs.addressActionsPopover.show()"
                 >
                     <icon data="@/assets/svg/ellipsis-v.svg" width="24" height="24" aria-hidden="true" />
-                </button>
+                </button> -->
+                <div v-if="mobileView" class="col align-end align-center-md">
+                    <address-actions-box />
+                </div>
             </div>
             <div v-if="!mobileView" class="col align-end align-center-md">
                 <address-actions-box />

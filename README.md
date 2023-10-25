@@ -17,6 +17,13 @@ We use `npm` to handle dependencies.
 ```shell
 npm install
 ```
+## Local Project setup
+
+Use the below command only if required on local setup or you can skip this and go to next.
+
+```shell
+npx browserslist@latest --update-db
+```
 
 ### Hot Build
 

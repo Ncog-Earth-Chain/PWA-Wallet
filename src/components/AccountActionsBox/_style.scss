@@ -134,8 +134,11 @@ p {
     display: block;
     position: relative;
     padding: 0px 19px;
+    cursor: pointer;
 }
-
+.d-flex{
+    display:flex !important;
+}
 a {
     text-decoration: none;
     transition: 0.3s;
@@ -199,8 +202,8 @@ a.wallet,
     height: 70%;
 }
 
-.view-dashboard .nec-status .net-balance .f-token-value__value, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value__value, 
-.no-markers .net-balance .f-token-value__value{
+.view-dashboard .nec-status .net-balance .f-token-value span, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value span, 
+.no-markers .net-balance .f-token-value span{
     color: #1e1e1e;
     font-size: 35px;
     font-style: normal;
@@ -328,8 +331,14 @@ a.send-cvr h3 {
 .walletkey-dtl{
     overflow: hidden;
 }
+.mmsettings_section button{
+    margin: 0 10px;
+}
+.mt-20{
+    margin-top:20px !important;
+}
 @media screen and (max-width: 1580px) {
-    .view-dashboard .nec-status .net-balance .f-token-value__value, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value__value, 
+    .view-dashboard .nec-status .net-balance .f-token-value span, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value span, 
     .no-markers .net-balance .f-token-value__value{
         color: #1e1e1e;
         font-size: 28px;
@@ -339,8 +348,8 @@ a.send-cvr h3 {
     }
 }
 @media screen and (max-width: 1440px) {
-    .view-dashboard .nec-status .net-balance .f-token-value__value, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value__value, 
-    .no-markers .net-balance .f-token-value__value{
+    .view-dashboard .nec-status .net-balance .f-token-value span, .view-dashboard .wallet-cvr .nec-statuswall .net-balance .f-token-value span, 
+    .no-markers .net-balance .f-token-value span{
         color: #1e1e1e;
         font-size: 22px;
         font-style: normal;
@@ -374,13 +383,5 @@ a.send-cvr h3 {
 @media screen and (max-width: 576px) {
     .wallet-b{
         border-right: none;
-    }
-}
-@media screen and (max-width: 440px) {
-    .wallet-cvr .col-lg-5{
-        margin-top: 100px;
-    }
-    .nec-status{
-        flex-direction: column;
     }
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="receive-nec">
         <div class="align-center">
-            Send your Ncogearthchain NEC to:
+            Send your NCOGEarthChain NEC to:
 
             <h3 class="address break-word" :class="addressCssClass">
                 {{ currentAccount.address }} &nbsp;
@@ -20,12 +20,12 @@
                 >
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to
+                        Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you need to
                         use a different address!
                     </template>
                 </f-copy-button>
                 <button class="btn large light same-size round" title="Show QR Code" @click="$refs.qrWindow.show()">
-                    <icon data="@/assets/svg/monochrome/Options/QR.svg" width="20" height="20"  style="color:#31BC3C;" aria-hidden="true" />
+                    <icon data="@/assets/svg/monochrome/Options/QR.svg" width="20" height="20"  class="c-green" aria-hidden="true" />
                 </button>
             </h3>
         </div>
@@ -46,7 +46,7 @@
 
         <q-r-code-window ref="qrWindow" :address="currentAccount.address">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive Ncogearthchain NEC only. If you are receiving NEC-ERC20 you need to use a
+                Warning: Use this address to receive NCOGEarthChain NEC only. If you are receiving NEC-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>
